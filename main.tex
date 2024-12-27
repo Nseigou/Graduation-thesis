@@ -1,0 +1,137 @@
+\documentclass[
+  % LuaLaTeXを使う
+  luatex,
+  % 用紙サイズをA4にする
+  paper=a4paper,
+  % 欧文のフォントサイズを11ptにする
+  fontsize=11pt,
+  % レポート形式
+  report,
+  % 日本語組版処理の記述と矛盾する設定がある場合に通知
+  jlreq_notes,
+]{jlreq}
+
+\usepackage{fontspec}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{enumitem}
+\usepackage{tocloft}  % 目次のカスタマイズ用パッケージ
+\usepackage{geometry}  % ページレイアウトの調整
+% jlreqsetupで色々設定できるようにする
+\usepackage{jlreq-complements}
+% 画像を扱う
+\usepackage{graphicx}
+% pdfのハイパーリンクを設定
+\usepackage[hidelinks]{hyperref}
+% 相対パスでファイルを読み込む
+\usepackage{import}
+% 枠をつける
+\usepackage{ascmac}  
+% 章やページの合計を扱う
+\usepackage{totcount}
+% svgを扱う
+\usepackage{svg}
+% 表の罫線を扱う
+\usepackage{booktabs}
+% 数式関連
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\usepackage[
+  % mathtoolsと一部競合するため，警告を無視
+  warnings-off={mathtools-colon,mathtools-overbracket}
+]{unicode-math}
+\unimathsetup{math-style=TeX,bold-style=TeX}
+\setmainfont[Ligatures=TeX]{Latin Modern Roman}
+\setsansfont[Ligatures=TeX]{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}
+\setmathfont{Latin Modern Math}
+% 目次の章タイトルを太字にする
+\renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
+
+% フォントを設定
+% unicode-mathの後でないとフォントが変更されない
+\usepackage[
+  % 多ウェイト化を有効にする
+  deluxe,
+  % jlreqで使えるようにする
+  jfm_yoko=jlreq,
+  jfm_tate=jlreqv,
+]{luatexja-preset}
+
+% jlreqの設定
+\jlreqsetup{
+  % 参考文献の見出しの出力命令を設定
+  thebibliography_heading={
+    % 見出しを章にする
+    \chapter*{\refname}
+    \renewcommand{\cftsecfont}{\normalfont}  % 節タイトルを通常フォント
+    % 目次に追加
+    \addcontentsline{toc}{chapter}{\refname}
+  },
+}
+
+\geometry{top=40mm, bottom=30mm, left=25mm, right=25mm}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+
+  {\Large
+    岐阜大学工学部 \\ [0.5em]
+    電気電子・情報工学科 \\ [0.5em]
+    令和6年度卒業論文 \\
+  } 
+  \vspace{8em} 
+
+  {\huge
+    セキュアなV2Vアドホックネットワーク \\
+    ルーティングプロトコルのための \\
+    EdDSA署名方式の評価 \\
+  }
+  \vspace{12em}
+
+  \LARGE 三嶋研究室 \\ [1em]
+  \Large 学籍番号：1213033107 \\ 
+  \huge 永野 正剛 \\ [1em]
+  \LARGE 指導教員：三嶋 美和子 教授 \\
+
+  \vfill 
+\end{titlepage}
+% 最初のページはページ番号をローマ数字にする
+\pagenumbering{roman}
+
+% 目次を表示
+\tableofcontents
+
+\clearpage
+% ページ番号を元に戻す
+\pagenumbering{arabic}
+
+\chapter*{はじめに}
+\addcontentsline{toc}{chapter}{はじめに}  % 目次に追加
+\chapter[　　 準備]{準備}
+\input{chapters/preparation/index.tex}
+\chapter[　　 EdDSA]{EdDSA}
+\input{chapters/eddsa/index.tex}
+\chapter[　　 提案手法]{提案手法}
+\input{chapters/methods/index.tex}
+\chapter[　　 シミュレーション環境]{シミュレーション環境}
+\input{chapters/simulation_environment/index.tex}
+\chapter[　　 シミュレーション実験]{シミュレーション実験}
+\input{chapters/experiment/index.tex}
+\chapter[　　 EdDSAに関する実装評価まとめ]{EdDSAに関する実装評価まとめ}
+\input{chapters/evaluation/index.tex}
+\chapter*{おわりに}
+\addcontentsline{toc}{chapter}{おわりに}  % 目次に追加
+\input{chapters/conclusion/index.tex}
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}  % 目次に追加
+\input{chapters/acknowledgements/index.tex}
+\chapter*{参考文献}
+\addcontentsline{toc}{chapter}{参考文献}  % 目次に追加
+\bibliographystyle{junsrt}
+\bibliography{references}
+
+\end{document}

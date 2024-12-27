@@ -1,0 +1,56 @@
+　実験に導入したEd25519のプロトコル内で使用されるリトルエンディアン、
+エンコーディング、プルーニングについて説明する.\\
+\begin{mdframed}[linecolor=black,roundcorner=10pt]
+  \textbf{リトルエンディアン}
+  \begin{enumerate}
+    \item[(1)] 　最下位バイトから順に配置する形式.
+    プロトコル内では、秘密スカラーの生成や公開鍵の生成において、
+    リトルエンディアンの整数を使用する.
+  \end{enumerate}
+  \textbf{エンコーディング}
+  \begin{enumerate}
+    \item[(1)]　すべての値はオクテット文字列としてコード化され、
+    整数はリトルエンディアン規則を使用してコード化される.
+    \item[(2)]　楕円曲線上の点のエンコード\\
+    $y$座標をリトルエンディアン形式の32オクテット文字列にエンコードし、
+    32バイト目の最上位ビットを0に設定する.
+    $x$座標の最下位ビットをy座標の32バイト目の最上位ビットに埋め込む.
+  \end{enumerate}
+  \textbf{プルーニング（ビット操作）}
+  \begin{enumerate}
+    \item [(1)]　最初のバイトの下位3ビットを0にクリアする.
+    \item [(2)]　最後のバイトの最上位ビットを0に設定し、
+                 最上位2ビット目を1に設定する.
+  \end{enumerate}
+\end{mdframed}
+\vspace{2em}
+
+　EdDSAの３つのアルゴリズムの手順を以下に述べる.
+
+\begin{itembox}[l]{鍵生成}
+  \begin{enumerate}[parsep=7pt]
+    \item 法とする素数$p$、楕円曲線$E$、基準点$G$、
+                  鍵のサイズ$b$、ハッシュ関数$H$、コファクター$c$、
+                  位数$L$を定める.
+    \item $b$バイトのランダムな値$sk$を生成し、秘密鍵とする.
+    \item $h = H(sk)$を計算し、$h$（オクテット文字列）を前半部分h[0]からh[31]と後半部分h[32]からh[63]に分ける.
+    \item 前半部分$s[0]$から$s[31]$を使ってプルーニングしたものをリトルエンディアンの整数として解釈し、スカラー$s$ (mod $L$)を生成する.
+    \item 基準点$G$を使って$A = sG$を計算し、Aのエンコードを公開鍵とする.
+  \end{enumerate}
+\end{itembox}
+  
+\begin{itembox}[l]{署名生成フェーズ}
+  \begin{enumerate}[parsep=7pt]
+    \item 秘密鍵$sk$を使って、ハッシュ値$h=H(sk)$を計算する.
+    \item $h$の後半部分$h[32]$から$h[63]$を使って、$r = DEC(H())$.
+    \item
+    \item
+  \end{enumerate}
+\end{itembox}
+
+\begin{itembox}[l]{署名検証フェーズ}
+  \begin{enumerate}[parsep=7pt]
+    \item
+    \item
+  \end{enumerate}
+\end{itembox}
