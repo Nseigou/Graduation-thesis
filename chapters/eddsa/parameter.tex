@@ -1,0 +1,18 @@
+EdDSAのパラメータは以下のようである.
+\begin{itemize}
+  \item $p$ : 法となる素数. EdDSAは$\mathbb{F}_p$上の楕円曲線を使用する.
+  \item $b$ : $p<2^{b-1}$となる正整数. 公開鍵の長さを表す. 
+  \item $E'$ : エンコーディング関数.
+  \item $H$ : ハッシュ関数. 2bビット長のハッシュ値を出力する.
+  \item $(a,d,c,l)$ : 楕円曲線$E$を決定するパラメータ. \\
+        \begin{center}
+          $E := ｛(x,y) \in \mathbb{F}_p \times \mathbb{F}_p \mid ax^2 + y^2 = 1 + dx^2y^2｝$
+        \end{center}
+        \begin{itemize}
+          \item $a$は$\mathbb{F}_p$上平方剰余、$d$は非ゼロの非剰余.
+          \item $c=2$または$3$. $l$は奇素数で$E$の位数$＃E=2^{c}l$となるような数.
+        \end{itemize}
+  \item $n$ : $c\leq n < b$となる整数.
+  \item $B$ : $E$上のベースポイント. $B\neq (0,1)$
+  \item PH : プレハッシュ関数. HashEdDSAの場合に用いる
+\end{itemize}

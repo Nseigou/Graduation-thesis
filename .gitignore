@@ -1,0 +1,8 @@
+#出力フォルダ
+out/
+
+*.pdf
+*.toc
+*.synctex.gz
+memo.tex
+test.tex
