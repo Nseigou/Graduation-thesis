@@ -3,6 +3,7 @@ out/
 
 *.pdf
 *.toc
+*.aux
 *.synctex.gz
 memo.tex
 test.tex
