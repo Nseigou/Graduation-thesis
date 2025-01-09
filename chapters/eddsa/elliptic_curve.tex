@@ -1,0 +1,24 @@
+この節ではEd25519で使用される\textbf{ツイストエドワーズ曲線
+(Twisted Edwards Curve)}について説明する.
+
+ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義される.
+非零かつ異なる要素$a,d\in \mathbb{F}_p$を持つとき、以下の式で与えられる.
+\begin{equation}
+  ax^2 + y^2 = 1 + dx^2y^2
+\end{equation}
+
+\paragraph{楕円加算}\leavevmode\\
+点の加算式は以下の通りである.
+\begin{equation}
+  (x_1,y_1)+(x_2,y_2)=(\frac{x_1y_2+x_2y_1}{1+dx_1x_2y_1y_2},\frac{y_1y_2+ax_1x_2}{1-dx_1x_2y_1y_2})
+\end{equation}
+\vspace{1em}
+
+$\mathcal{O}$は無限遠点と呼ばれ、
+$E$は $\mathcal{O} := (0, 1)$ を単位元とする加法群になる．
+エドワーズ曲線では、楕円点の加算、2倍算（同一の点の加算）、無限遠点の
+加算が同一式で表現される.
+このため、ECDSAのような分岐処理が不要になり、計算が簡略化される.\\
+
+
+

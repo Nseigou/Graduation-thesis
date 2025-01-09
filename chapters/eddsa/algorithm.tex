@@ -22,22 +22,28 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\[1
     \item 秘密鍵$sk$を使って、ハッシュ値$h=H(sk)$を計算する.
     \item $h$の後半部分$h[32]$から$h[63]$を使って、
     \begin{center}
-      $r = DEC(H(h[32]\mid\mid ... \mid\mid h[63] \mid\mid M))$ mod $L$.
+      $r = H(h[32]\mid\mid ... \mid\mid h[63] \mid\mid M)$ mod $L$.
     \end{center}
-    を計算する.
-    \item $R=ENCE([r]B)$ を計算する.
-    \item $k=DEC(H(R \mid\mid A \mid\mid M))$ mod$L$ を計算する.
-    \item $S=ENC((r+k*s)$ mod$L)$ を計算する.
+    を計算し、デコードする.
+    \item $R=[r]B$ を計算し、エンコードする.
+    \item $k=H(R \mid\mid A \mid\mid M)$ mod$L$ を計算し、デコードする.
+    \item 鍵生成の際$s$を用いて$S=(r+k*s)$ mod$L$ を計算し、エンコードする.
     \item $(R,S)$を署名とする.
   \end{enumerate}
-  秘密のスカラー値
 \end{mdframed}
 \vspace{2em}
 \begin{mdframed}[linecolor=black,roundcorner=10pt]
   \textbf{署名検証}
   \begin{enumerate}[parsep=7pt]
-    \item 署名$(R,S)$を受け取り、$R$をデコードする.
-    \item
+    \item メッセージ$M$と署名$(R,S)$を受け取る.
+    \item $R'=DECE(R)$ として、$R$をデコードする.
+    \item $S'=DEC(S)$ として、$S$をデコードする.
+    \item $A'=DECE(A)$ として、$A$をデコードする.
+    \item 2～4でデコードに失敗した場合や$0\leq S<L$の範囲外である場合、
+    棄却する.
+    \item $k'=H(R' \mid\mid A' \mid\mid M)$ mod $L$を計算し、デコードする.
+    \item $[8][S']B=[8]R'+[8][k']A'$が成り立てば、署名は有効である.
+    そうでなければ、署名は無効である.
   \end{enumerate}
 \end{mdframed}
 

@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{schnorr}
+Claus-Peter Schnorr.
+\newblock Efficient identification and signatures for smart cards.
+\newblock In {\em Advances in Cryptology—CRYPTO’89 Proceedings 9}, pages
+  239--252. Springer, 1990.
+
+\bibitem{twisted}
+Daniel~J Bernstein, Peter Birkner, Marc Joye, Tanja Lange, and Christiane
+  Peters.
+\newblock Twisted edwards curves.
+\newblock In {\em Progress in Cryptology--AFRICACRYPT 2008: First International
+  Conference on Cryptology in Africa, Casablanca, Morocco, June 11-14, 2008.
+  Proceedings 1}, pages 389--405. Springer, 2008.
+
+\bibitem{high-speed}
+Daniel~J Bernstein, Niels Duif, Tanja Lange, Peter Schwabe, and Bo-Yin Yang.
+\newblock High-speed high-security signatures.
+\newblock {\em Journal of cryptographic engineering}, 2(2):77--89, 2012.
+
+\bibitem{8032}
+Simon Josefsson and Ilari Liusvaara.
+\newblock Rfc 8032: Edwards-curve digital signature algorithm (eddsa), 2017.
+
+\bibitem{rfc8446}
+E.~Rescorla.
+\newblock {The Transport Layer Security (TLS) Protocol Version 1.3}.
+\newblock RFC 8446, 2018.
+
+\bibitem{monero}
+Monero Project.
+\newblock Edwards25519, 2025.
+
+\bibitem{curve25519}
+Daniel~J Bernstein.
+\newblock Curve25519: new diffie-hellman speed records.
+\newblock In {\em Public Key Cryptography-PKC 2006: 9th International
+  Conference on Theory and Practice in Public-Key Cryptography, New York, NY,
+  USA, April 24-26, 2006. Proceedings 9}, pages 207--228. Springer, 2006.
+
+\bibitem{インフォーズ}
+株式会社インフォーズ.
+\newblock ディジタル署名アルゴリズム eddsa の実装性能調査.
+\newblock {\em CRYPTREC 外部評価報告書}, pages 1--108, 2021.
+
+\end{thebibliography}

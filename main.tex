@@ -36,15 +36,8 @@
 % 数式関連
 \usepackage{amsmath,amssymb}
 \usepackage{mathtools}
-\usepackage[
-  % mathtoolsと一部競合するため，警告を無視
-  warnings-off={mathtools-colon,mathtools-overbracket}
-]{unicode-math}
-\unimathsetup{math-style=TeX,bold-style=TeX}
-\setmainfont[Ligatures=TeX]{Latin Modern Roman}
-\setsansfont[Ligatures=TeX]{Latin Modern Sans}
-\setmonofont{Latin Modern Mono}
-\setmathfont{Latin Modern Math}
+\usepackage{longtable}
+\usepackage{array}
 % 目次の章タイトルを太字にする
 \renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
 
@@ -130,9 +123,7 @@
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}  % 目次に追加
 \input{chapters/acknowledgements/index.tex}
-\chapter*{参考文献}
-\addcontentsline{toc}{chapter}{参考文献}  % 目次に追加
-\bibliographystyle{junsrt}
+\bibliographystyle{unsrt}
 \bibliography{references}
 
 \end{document}
