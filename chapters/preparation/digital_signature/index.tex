@@ -1,14 +1,14 @@
 デジタル署名とは, メッセージ作成者の否認防止を含めた, 作成者の認証を
 可能にする暗号技術である. 
 デジタル署名の目的は, いわゆる手書きの署名や捺印と同じ機能を電子的に達成
-することといえる. また, デジタル署名の検証によって, 電子データが通信途中で改ざん
+することといえる. また, デジタル署名の検証によって, デジタルデータが通信途中で改ざん
 されていないことを保証できるため, データの信頼性を確保することができる.\\
 % \textbf{デジタル署名}とは, 電子データの真正性と完全性を検証するための
 % 暗号技術であり, 電子データの送信者を認証するとともに, 
 % そのデータが通信途中で改ざんされていないことを保証する仕組みである. 
 % この技術は, データの信頼性を確保し, 送信者がデータの送信を否定できない
 % 非否認性を提供する.\\
-\indent 一般に, 電子署名は以下の３つのフェーズから構成される.
+\indent 一般に, デジタル署名は以下の３つのフェーズから構成される.
 
 \begin{enumerate}
   \item \textbf{鍵生成}\\
@@ -32,11 +32,12 @@
   検証鍵によって生成されたことを確認できるため, メッセージが正規の
   作成者によって署名され, 送信後に改ざんされていないことが保証される.
 \end{enumerate}
-\indent デジタル署名にはさまざまなアルゴリズムが存在する. 以下の項では,  
-国立標準技術研究所(National Institute of Standards and Technology, NIST)
+
+デジタル署名にはさまざまなアルゴリズムが存在する. 以下の項では,  
+\textbf{国立標準技術研究所(National Institute of Standards and Technology, NIST)}
 による情報処理標準規格 FIPS に基づいて設計された
-DSA（Digital Signature Algorithm）およびその改良版である
-ECDSA（Elliptic Curve Digital Signature Algorithm）の
+\textbf{DSA(Digital Signature Algorithm)}およびその改良版である
+\textbf{ECDSA(Elliptic Curve Digital Signature Algorithm)}の
 アルゴリズムについて述べる.\\
 
 \subsection{DSA}

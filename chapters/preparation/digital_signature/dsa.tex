@@ -1,10 +1,9 @@
-DSA (Digital Signature Algorithm) は, 1993 年に FIPS 186 として
+\textbf{DSA (Digital Signature Algorithm)}は, 1993 年に FIPS 186-4として
 標準化された, DSS (Digital Signature Standard) の主要なアルゴリズムの
- 1 つであった. なお, 2023 年の FIPS 186-5 [6] では,DSAは
+1つであった. なお, 2023 年の FIPS 186-5\cite{fips186-5} では,DSAは
 新たにデジタル署名を行うことには推奨されないが, 標準策定以前に行われた
-署名の検証には引き続き利用可能とされている.
-DSAの3つのフェーズにおける処理は以下の通りである．
-
+署名の検証には引き続き利用可能とされている.\\
+\indent DSAの3つのフェーズにおける処理は以下の通りである.\\[0.5em]
 \let\ltxlist\list
 \begin{breakitembox}[l]{\textbf{鍵生成}}
   　
@@ -16,22 +15,22 @@ DSAの3つのフェーズにおける処理は以下の通りである．
     \end{center}
     \item $N$ビットのランダムな素数$q(2^{N-1}<q<2^{N})$, 
     $L$ ビットのランダムな素数$p(2^{L-1}<q<2^{L})$ を選ぶ.
-    ただし,$q$は$p-1$を割り切る素数とする.
+    ただし, $q$は$p-1$を割り切る素数とする.
     \item ランダムな整数$a<p-1$に対し,
-    \begin{equation}
+    \[
       g\equiv a^{\frac{p-1}{q}}\pmod p
-    \end{equation} 
+    \] 
     を計算する. ただし,$g=1$である場合は再度$a$を選び直す.
     \item ランダムな整数$x(1<x<q)$に対し,
-    \begin{equation}
+    \[begin{equation}]
       y\equiv g^x\pmod p
-    \end{equation}
+    \]
     を計算する.
     \item $p,q,g$は専用のパラメータとして, $y$は検証鍵(公開鍵)として
-    公開する. $x$は署名鍵(秘密鍵)として厳重に管理する.
+    公開する. $x$は署名鍵(秘密鍵)として安全に管理する.
   \end{enumerate}
 \end{breakitembox}
-\vspace{1m}
+\vspace{1em}
 \indent 任意長のメッセージ $M$ に対して, パラメータ$p, q, g$, 秘密鍵$x$, 
 ハッシュ関数$H$ を用いて, 次のように署名を生成する.
 \vspace{1em}
@@ -42,7 +41,7 @@ DSAの3つのフェーズにおける処理は以下の通りである．
     \item ランダムな整数 $k(1<k<q)$ を選ぶ.
     \item $r\equiv (g^k\pmod p)\pmod q$ を計算する. 
     ただし, $r=0$ の場合は再度 $k$ を選び直す.
-    \item $s\equiv k^{-1}(H(M+xr)\pmod q$ を計算する.
+    \item $s\equiv k^{-1}(H(M+xr))\pmod q$ を計算する.
     ただし, $s=0$ の場合は再度 $k$ を選び直す.
     \item $(r,s)$ をメッセージ$M$に対する署名とし, 
     $M$とともに受信者に送信する.
@@ -56,8 +55,8 @@ DSAの3つのフェーズにおける処理は以下の通りである．
 \begin{breakitembox}[l]{\textbf{署名検証}}
   　
   \begin{enumerate}[parsep=7pt]
-    \item $0<r<q$ かつ $0<s<q$ であることを確認する. これを満たさない
-    場合, 署名は棄却する.
+    \item 受け取った$(r,s)から, $$0<r<q$ かつ $0<s<q$ であることを確認する. 
+    これを満たさない場合は署名を棄却する.
     \item $w\equiv s^{-1}\pmod q$ を計算する.
     \item $u_1\equiv wH(M)\pmod q$を計算する.
     \item $u_2\equiv rw\pmod q$ を計算する.
@@ -68,9 +67,9 @@ DSAの3つのフェーズにおける処理は以下の通りである．
 \end{breakitembox}
 \vspace{1em}
 \indent 正当なメッセージと署名の組$(M, (r, s))$に対し, 
-\begin{equation}
+\[
   g^{u_1}y^{u_2}\equiv g^{u_1+xu_2} \equiv g^{H(M)+xr}w\equiv g^{k}\pmod p
-\end{equation}
+\]
 が成り立つ. これは 
 \begin{align*}
   v &\equiv (g^{u_1}y^{u_2} \mod p) \mod q \\

@@ -26,6 +26,19 @@ Richard~Gilles Engoulou, Martine Bella{\"\i}che, Samuel Pierre, and Alejandro
 \newblock Vanet security surveys.
 \newblock {\em Computer Communications}, 44:1--13, 2014.
 
+\bibitem{gpsr}
+Brad Karp and Hsiang-Tsung Kung.
+\newblock Gpsr: Greedy perimeter stateless routing for wireless networks.
+\newblock In {\em Proceedings of the 6th annual international conference on
+  Mobile computing and networking}, pages 243--254, 2000.
+
+\bibitem{fips186-5}
+{National Institute of Standards and Technology (NIST)}.
+\newblock Fips 186-5 digital signature standard (dss).
+\newblock Technical report, National Institute of Standards and Technology,
+  2023.
+\newblock Supersedes FIPS 186-4.
+
 \bibitem{schnorr}
 Claus-Peter Schnorr.
 \newblock Efficient identification and signatures for smart cards.
