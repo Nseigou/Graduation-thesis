@@ -1,15 +1,16 @@
 \textbf{EdDSA}(\textbf{Edwards-curve Digital Signature Algorithm})
-とは, 2012年にDaniel J. Bernsteinらによって提案された決定論的
+とは, 2011年にDaniel J. Bernsteinらによって提案された決定論的
 シュノア署名\cite{schnorr}の一種であり, 効率的な点の加算公式をもつ特殊な楕円曲線である
 エドワーズ曲線, またはツイストエドワーズ曲線\cite{twisted}を
 利用したデジタル署名である.\cite{high-speed}
 EdDSAの開発は, 従来のECDSAが持ついくつかの欠点を克服する目的で進められた.
 2017年, インターネット技術やプロトコル, 標準, ソフトウェアなどに関する
 公式な文書である RFC 8032 \cite{8032}が, インターネットの技術的な
-標準を策定する国際的な組織 IETF によって公開された.
-さらに, 2020年には
-国立標準技術研究所(National Institute of Standards and Technology, NIST)
-による情報処理標準規格 FIPS 186-5で標準化された.
+標準を策定する国際的な組織 IETF によって公開され, EdDSAが標準化された.
+さらに, 2019年には
+% 国立標準技術研究所(National Institute of Standards and Technology, NIST)
+% による情報処理標準規格 
+NIST の FIPS 186-5で標準化された.
 EdDSAはECDSAに比べて多くの利点があるため, 
 インターネット上で通信する際にデータを安全に暗号化し, 
 通信相手の認証を行うためのプロトコルである 
@@ -39,12 +40,13 @@ Ed448はEd25519よりもセキュリティレベルが高いが,
 2.4節ではEd25519のデジタル署名アルゴリズムについて述べ,
 最後に, 2.5節ではECDSAとEd25519のセキュリティと計算効率の比較を行い, 
 Ed25519を用いる利点を説明する.\\
+\section{ツイストエドワーズ曲線}
+\input{chapters/eddsa/elliptic_curve.tex}
 \section{データの変換}
 \input{chapters/eddsa/data_conversion.tex}
+\newpage
 \section{パラメータ}
 \input{chapters/eddsa/parameter.tex}
-\section{楕円曲線}
-\input{chapters/eddsa/elliptic_curve.tex}
 \section{デジタル署名アルゴリズム}
 \input{chapters/eddsa/algorithm.tex}
 \section{ECDSAとEd25519の比較}

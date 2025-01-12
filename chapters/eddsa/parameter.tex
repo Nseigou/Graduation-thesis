@@ -1,6 +1,5 @@
 EdDSAのパラメータは以下の通りである.なお, ツイストエドワーズ曲線を$E$とする.\\
-\begin{table}[h]
-  \caption{EdDSAのパラメータ}
+\begin{table}[htbp]
   \centering
   \begin{tabular}{cp{10cm}}
     \hline
@@ -8,19 +7,20 @@ EdDSAのパラメータは以下の通りである.なお, ツイストエドワ
     $p$ & 法となる素数. EdDSAは$\mathbb{F}_p$上の楕円曲線を使用する.\\
     $b$ & $b\geq 10$かつ$p<2^{b-1}$となる正整数. 公開鍵の長さを表す.\\
     H & ハッシュ関数. 2bビット長のハッシュ値を出力する. \\
-    $a$ & $E$を決定するパラメータ. $\mathbb{F}_p$上の平方剰余. すなわち、$x^2\equiv d \pmod{p}$となる$x$が存在する.\\
-    $d$ & $E$を決定するパラメータ. 非ゼロの非剰余. すなわち、$x^2\equiv d \mod{p}$となる$x$が存在しない.\\
-    $c$ & $E$を決定するパラメータ. コファクタ. $2$または$3$.\\
+    $a$ & $E$を決定するパラメータ. $\mathbb{F}_p$上の平方剰余. すなわち, $x^2\equiv d \pmod{p}$となる$x$が存在する.\\
+    $d$ & $E$を決定するパラメータ. $a\neq d$. 非ゼロの非剰余. すなわち, $x^2\equiv d \mod{p}$となる$x$が存在しない.\\
+    $c$ & $E$を決定するパラメータ. $2$または$3$. $2^{c}$はコファクタと呼ばれる.\\
     $L$ & $E$を決定するパラメータ. $2^{200}$より大きい奇素数で$E$の位数$＃E=2^{c}l$となるような数であり, $B$の位数.\\
     $B$ & $E$上のベースポイント. $B\neq (0,1)$\\
     $n$ & $c\leq n < b$となる整数.\\ \hline
   \end{tabular}
+  \caption{EdDSAのパラメータ}
 \end{table}
 
 本研究で使用するEd25519のパラメータは以下の通りである.\\
 \begin{longtable}{cc}
   \caption{Ed25519のパラメータ}
-  \endfirsthead
+  \endlastfoot
   \hline
   \multicolumn{1}{c}{パラメータ} & \multicolumn{1}{c}{値, または関数} \\ \hline \hline
   $p$ & $2^{255}-19$ \\
@@ -37,5 +37,3 @@ EdDSAのパラメータは以下の通りである.なお, ツイストエドワ
   $n$ & 254 \\ \hline
 \end{longtable}
 
-
-コファクタに関しては\textbf{参考論文}を参照していただきたい.

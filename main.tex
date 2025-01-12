@@ -38,6 +38,9 @@
 \usepackage{mathtools}
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{itembkbx} % breakitembox環境を使う
+\usepackage{jquote}
+
 % 目次の章タイトルを太字にする
 \renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
 
@@ -122,7 +125,7 @@
 \input{chapters/conclusion/index.tex}
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}  % 目次に追加
-\input{chapters/acknowledgements/index.tex}
+% \input{chapters/acknowledgements/index.tex}
 \bibliographystyle{unsrt}
 \bibliography{references}
 

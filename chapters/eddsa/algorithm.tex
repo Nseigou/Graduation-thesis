@@ -1,49 +1,53 @@
-Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\[1em]
-\begin{mdframed}[linecolor=black,roundcorner=10pt]
-  \textbf{鍵生成}
+Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
+\indent なお, ENC, DEC, ENCE, DECEは2.2節で述べた関数を使用する.
+また, $H, L, B$は2.3節で述べたEd25519の値, または関数を使用する.\\[1em]
+\let\ltxlist\list
+\begin{breakitembox}[l]{\textbf{鍵生成}}
+  　
   \begin{enumerate}[parsep=7pt]
-    \item 法とする素数$p$、楕円曲線$E$、基準点$B$、
-          鍵のサイズ$b$、ハッシュ関数$H$、エンコーディング関数$E'$、
-          コファクター$c$、位数$L$を定める.
-    \item $b$バイトのランダムな値$sk$を生成し、\textbf{秘密鍵}とする.
-    \item $h = H(sk)$を計算し、$h$（オクテット文字列）を
-    前半部分$h[0]$から$h[31]$と後半部分$h[32]$から$h[63]$に分ける.
+    \item $256$バイトのランダムな値$Pk$を生成し, 秘密鍵とする.
+    \item $h=H(Pk)=(h[0]\mid\mid h[1]\mid\mid \cdots\mid\mid h[63])$
+    を計算する. (ここで$h[n]$はハッシュ関数の出力512ビットを
+    オクテット配列と見なしたときの$n$オクテット目のビット列を表す.)
+    \item $h$を前半部分 $h[0]$ から $h[31]$ と後半部分 $h[32]$ から $h[63]$ に分ける.
     \item 前半部分の最初のバイト($h[0]$)の下位3ビットを0にクリアする.
-    最後のバイト($h[31]$)の最上位ビットを0に、最上位2ビット目を1に設定したものを
-    リトルエンディアンの整数として解釈し、スカラー$s$ (mod $L$)を生成する.
-    \item 基準点$B$を使って$A = sB$を計算し、$ENCE(A)$を\textbf{公開鍵}とする.
+    最後のバイト($h[31]$)の最上位ビットを0に, 最上位2ビット目を1に設定したものを
+    リトルエンディアン形式の整数として解釈し, スカラー $s \mod L$を生成する.
+    \item 基準点$B$を使って$A = sB$を計算し, $ENCE(A)$を公開鍵とする.
   \end{enumerate}
-  スカラー値$s$は 8 の倍数で，正確に 255 ビットとなる
-\end{mdframed}
+  スカラー値$s$は 8 の倍数で，ちょうど 255 ビットとなる.
+\end{breakitembox}
 \vspace{2em}
-\begin{mdframed}[linecolor=black,roundcorner=10pt]
-  \textbf{署名生成}
+\let\ltxlist\list
+\begin{breakitembox}[l]{\textbf{署名生成}}
+  　
   \begin{enumerate}[parsep=7pt]
-    \item 秘密鍵$sk$を使って、ハッシュ値$h=H(sk)$を計算する.
-    \item $h$の後半部分$h[32]$から$h[63]$を使って、
+    \item 秘密鍵$Pk$を使って, ハッシュ値 $h=H(Pk)$ を計算する.
+    \item $h$の後半部分 $h[32]$ から $h[63]$ を使って, 
     \begin{center}
-      $r = H(h[32]\mid\mid ... \mid\mid h[63] \mid\mid M)$ mod $L$.
+      $r = H(h[32]\mid\mid \cdots \mid\mid h[63] \mid\mid M) \mod L$
     \end{center}
-    を計算し、デコードする.
-    \item $R=[r]B$ を計算し、エンコードする.
-    \item $k=H(R \mid\mid A \mid\mid M)$ mod$L$ を計算し、デコードする.
-    \item 鍵生成の際$s$を用いて$S=(r+k*s)$ mod$L$ を計算し、エンコードする.
+    を計算し, デコードする.
+    \item $R=rB$ を計算し, エンコードする.
+    \item $k=H(R \mid\mid A \mid\mid M)$ を計算する.
+    \item 鍵生成の際 $s$ を用いて $S=r+ks \pmod L$ を計算し, エンコードする.
     \item $(R,S)$を署名とする.
   \end{enumerate}
-\end{mdframed}
+\end{breakitembox}
 \vspace{2em}
-\begin{mdframed}[linecolor=black,roundcorner=10pt]
-  \textbf{署名検証}
+\let\ltxlist\list
+\begin{breakitembox}[l]{\textbf{署名検証}}
+　
   \begin{enumerate}[parsep=7pt]
     \item メッセージ$M$と署名$(R,S)$を受け取る.
-    \item $R'=DECE(R)$ として、$R$をデコードする.
-    \item $S'=DEC(S)$ として、$S$をデコードする.
-    \item $A'=DECE(A)$ として、$A$をデコードする.
-    \item 2～4でデコードに失敗した場合や$0\leq S<L$の範囲外である場合、
-    棄却する.
-    \item $k'=H(R' \mid\mid A' \mid\mid M)$ mod $L$を計算し、デコードする.
-    \item $[8][S']B=[8]R'+[8][k']A'$が成り立てば、署名は有効である.
-    そうでなければ、署名は無効である.
+    \item $R'=DECE(R)$ として, $R$をデコードする.
+    \item $S'=DEC(S)$ として, $S$をデコードする.
+    \item $A'=DECE(A)$ として, $A$をデコードする.
+    \item Step2～4でデコードに失敗した場合や$0\leq S<L$の範囲外である場合, 
+    署名を棄却する.
+    \item $k'=H(R' \mid\mid A' \mid\mid M)$ を計算する.
+    \item $8S'B=8R'+8k'A'$ が成り立てば, 署名は有効である.
+    そうでなければ, 署名は無効である.
   \end{enumerate}
-\end{mdframed}
+\end{breakitembox}
 

@@ -1,4 +1,30 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{adhoc}
+Ram Ramanathan and Jason Redi.
+\newblock A brief overview of ad hoc networks: challenges and directions.
+\newblock {\em IEEE communications Magazine}, 40(5):20--22, 2002.
+
+\bibitem{vanet}
+Yu~Wang and Fan Li.
+\newblock Vehicular ad hoc networks.
+\newblock {\em Guide to wireless ad hoc networks}, pages 503--525, 2009.
+
+\bibitem{drone}
+Hafez Seliem, Reza Shahidi, Mohamed~Hossam Ahmed, and Mohamed~S Shehata.
+\newblock Drone-based highway-vanet and das service.
+\newblock {\em IEEE Access}, 6:20125--20137, 2018.
+
+\bibitem{vanet-challenge}
+K~Tanuja, TM~Sushma, M~Bharathi, and KH~Arun.
+\newblock A survey on vanet technologies.
+\newblock 2015.
+
+\bibitem{vanet-security}
+Richard~Gilles Engoulou, Martine Bella{\"\i}che, Samuel Pierre, and Alejandro
+  Quintero.
+\newblock Vanet security surveys.
+\newblock {\em Computer Communications}, 44:1--13, 2014.
 
 \bibitem{schnorr}
 Claus-Peter Schnorr.

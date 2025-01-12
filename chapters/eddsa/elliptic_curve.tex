@@ -1,24 +1,57 @@
-この節ではEd25519で使用される\textbf{ツイストエドワーズ曲線
-(Twisted Edwards Curve)}について説明する.
-
-ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義される.
-非零かつ異なる要素$a,d\in \mathbb{F}_p$を持つとき、以下の式で与えられる.
+この節ではEdDSAで使用される\textbf{ツイストエドワーズ曲線
+(Twisted Edwards Curve)}について説明する.\\
+\indent ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義される.
+異なる非零元$a,d\in \mathbb{F}_p$ に対し, 以下の式で与えられる.
 \begin{equation}
   ax^2 + y^2 = 1 + dx^2y^2
 \end{equation}
 
-\paragraph{楕円加算}\leavevmode\\
-点の加算式は以下の通りである.
+\noindent\paragraph{楕円加算}\leavevmode\\
+\indent 点$(x_1,y_1)$と$(x_2,x_2)$の加算式を以下のように定義する.
 \begin{equation}
-  (x_1,y_1)+(x_2,y_2)=(\frac{x_1y_2+x_2y_1}{1+dx_1x_2y_1y_2},\frac{y_1y_2+ax_1x_2}{1-dx_1x_2y_1y_2})
+  (x_1,y_1)+(x_2,y_2)=
+  \left( 
+    \frac{x_1y_2+x_2y_1}{1+dx_1x_2y_1y_2},
+    \frac{y_1y_2+ax_1x_2}{1-dx_1x_2y_1y_2} 
+  \right)
 \end{equation}
 \vspace{1em}
 
-$\mathcal{O}$は無限遠点と呼ばれ、
-$E$は $\mathcal{O} := (0, 1)$ を単位元とする加法群になる．
-エドワーズ曲線では、楕円点の加算、2倍算（同一の点の加算）、無限遠点の
-加算が同一式で表現される.
-このため、ECDSAのような分岐処理が不要になり、計算が簡略化される.\\
+\indent$\mathcal{O}$は無限遠点と呼ばれ,次の性質を持つ.\\
+\noindent \textbf{加法における中立元}\\
+\indent 無限遠点は楕円曲線$E$上の特別な点で任意の点$P$に対して, 次の式が成り立つ.
+\begin{equation}
+  P+\mathcal{O}=\mathcal{O}+P=P
+\end{equation}
+\indent ツイストエドワーズ曲線を使用したEd25519において, 無限遠点$\mathcal{O}$は
+次の座標をもつと定義される.
+\begin{equation}
+  \mathcal{O}=(0,1)
+\end{equation}
+\indent 曲線の方程式(2.1)に$(0,1)$を代入すると,
+\begin{equation}
+  a(0)^2 + (1)^2 = 1 + d(0)^2(1)^2
+\end{equation}
+となり, 明らかに成り立つ.\\[1em]
+\noindent \textbf{点の逆元}\\
+\indent 点$P=(x,y)$に対して, その逆元$-P$は次のように定義される.
+\begin{equation}
+  -P=(x,-y)
+\end{equation}
+\indent 無限遠点の逆元は自分自身であるため, 
+\begin{equation}
+  -\mathcal{O}=\mathcal{O}
+\end{equation}
+となる.\\
+\noindent \textbf{スカラー倍}\\
+\indent スカラー倍($kP$)で$k=0$の場合, 常に無限遠点となる.
+\begin{equation}
+  0･P=\mathcal{O}
+\end{equation}
+
+\indent ツイストエドワーズ曲線$E$は$\mathcal{O}$を単位元とする加法群になる.\\
+楕円点の加算, 2倍算（同一の点の加算）, 無限遠点の加算が同一式で
+表現されるため, ECDSAのような分岐処理が不要になり, 計算が簡略化される.\\
 
 
 

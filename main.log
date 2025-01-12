@@ -1,6 +1,6 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  9 JAN 2025 17:52
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  11 JAN 2025 00:17
  restricted system commands enabled.
-**main
+**main.tex
 (./main.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1418,13 +1418,55 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \backup@length=\skip174
 \ar@cellbox=\box118
 )
+(c:/texlive/texmf-local/tex/latex/local/mysty/itembkbx.sty
+Package: itembkbx 2024/07/09 v 0.24-lua
+
+(c:/texlive/texmf-local/tex/latex/local/mysty/eclbkbox.sty
+\bk@bxb=\box119
+\bk@bxa=\box120
+\bk@lcnt=\count385
+)
+(c:/texlive/texmf-local/tex/latex/local/mysty/itembbox.sty
+Package: itembbox 2011/01/20 v 0.21
+\iboxpos@=\toks54
+\sc@itemb@x=\box121
+\sc@itemb@x@=\box122
+\@itemw=\dimen344
+\shaderule=\dimen345
+\dblboxrule=\dimen346
+\dblboxrulein=\dimen347
+\dblboxsep=\dimen348
+)
+(c:/texlive/texmf-local/tex/latex/local/mysty/jquote.sty
+Package: jquote 2022/06/02 v0.17
+)
+(c:/texlive/texmf-local/tex/latex/local/mysty/emathC.sty
+Package: emathC 2022/01/10 v1.21
+
+(c:/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/texmf-local/tex/latex/local/mysty/EMhairetu.sty
+Package: EMhairetu 2015/10/23 v0.05
+)
+\c@tempcnta=\count386
+\templa=\dimen349
+\h@ndle=\read4
+\em@whndl=\write5
+\emath@toks@=\toks55
+\Sett@width=\dimen350
+)
+\linesep=\dimen351
+\itembkbx@dima=\dimen352
+\rectbox@item@box=\box123
+)
 (c:/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-preset.sty
 Package: luatexja-preset 2024-03-30 Japanese font presets
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
-\g__ltjpreset_applycount_int=\count385
+\g__ltjpreset_applycount_int=\count387
 
 (c:/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty
 Package: luatexja-fontspec 2024-05-14 fontspec support of LuaTeX-ja
@@ -1437,7 +1479,7 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (c:/texlive/2024/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-29e.st
 y
 Package: luatexja-fontspec-29e 2024-05-27 fontspec support of LuaTeX-ja
-\g__ltj_fontspec_altnumber_int=\count386
+\g__ltj_fontspec_altnumber_int=\count388
 ))
 
 Package luatexja-preset Warning: Japanese fonts will be scaled by 1.
@@ -1599,43 +1641,43 @@ Package: lltjp-array 2024-07-21 Patch to array for LuaTeX-ja
 (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count387
-\scratchdimen=\dimen344
-\scratchbox=\box119
-\nofMPsegments=\count388
-\nofMParguments=\count389
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count390
-\MPscratchDim=\dimen345
-\MPnumerator=\count391
-\makeMPintoPDFobject=\count392
-\everyMPtoPDFconversion=\toks55
+\scratchcounter=\count389
+\scratchdimen=\dimen353
+\scratchbox=\box124
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen354
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks57
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1678,29 +1720,29 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 73.
 (./main.out) (./main.out)
-\@outlinefile=\write5
+\@outlinefile=\write6
 
-\openout5 = main.out
+\openout6 = main.out
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.4pt on input line 75.
+(Font)              scaled to size 15.4pt on input line 78.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.4pt on input line 75.
+(Font)              scaled to size 15.4pt on input line 78.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 22.0pt on input line 82.
+(Font)              scaled to size 22.0pt on input line 85.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 22.0pt on input line 82.
+(Font)              scaled to size 22.0pt on input line 85.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 18.7pt on input line 89.
+(Font)              scaled to size 18.7pt on input line 92.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 18.7pt on input line 89.
+(Font)              scaled to size 18.7pt on input line 92.
 
 
 [1
@@ -1708,42 +1750,130 @@ LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 ]
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 27.5pt on input line 100.
+(Font)              scaled to size 27.5pt on input line 103.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 27.5pt on input line 100.
+(Font)              scaled to size 27.5pt on input line 103.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 27.5pt on input line 100.
+(Font)              scaled to size 27.5pt on input line 103.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 27.5pt on input line 100.
- (./main.toc)
-\tf@toc=\write6
+(Font)              scaled to size 27.5pt on input line 103.
+ (./main.toc
+LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
-\openout6 = main.toc
+(Font)              scaled to size 11.0pt on input line 1.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 11.0pt on input line 1.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 1.
+LaTeX Font Info:    Trying loading font information for OT1+lmr on input line 1
+.
+ (c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying loading font information for OML+lmm on input line 1
+.
+
+(c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying loading font information for OMS+lmsy on input line 
+1.
+
+(c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying loading font information for OMX+lmex on input line 
+1.
+
+(c:/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 1.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 7.69997pt on input line 1.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 5.5pt on input line 1.
+LaTeX Font Info:    Trying loading font information for U+msa on input line 1.
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying loading font information for U+msb on input line 1.
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (14.443pt too wide) detected at line 2
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 1 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+
+Overfull \hbox (14.443pt too wide) detected at line 6
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 2 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+
+Overfull \hbox (14.443pt too wide) detected at line 16
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 3 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+
+Overfull \hbox (14.443pt too wide) detected at line 17
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 4 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+
+Overfull \hbox (14.443pt too wide) detected at line 18
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 5 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+
+Overfull \hbox (14.443pt too wide) detected at line 19
+[]|\JY3/HaranoAjiMincho-Regular.otf(0)/b/n/11 第 \TU/lmr/bx/n/11 6 |\JY3/Haran
+oAjiMincho-Regular.otf(0)/b/n/11 章 
+ []
+
+)
+\tf@toc=\write7
+
+\openout7 = main.toc
 
 
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.89993pt on input line 102.
+(Font)              scaled to size 9.89993pt on input line 105.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 9.89993pt on input line 102.
+(Font)              scaled to size 9.89993pt on input line 105.
 [1](load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 22.0pt on input line 107.
+(Font)              scaled to size 22.0pt on input line 110.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 22.0pt on input line 107.
+(Font)              scaled to size 22.0pt on input line 110.
 (load cache: extra_lmsans10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 22.0pt on input line 107.
+(Font)              scaled to size 22.0pt on input line 110.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 22.0pt on input line 107.
+(Font)              scaled to size 22.0pt on input line 110.
 
 
 
@@ -1754,106 +1884,61 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 ] (./chapters/preparation/index.tex(load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.4pt on input line 2.
+(Font)              scaled to size 15.4pt on input line 8.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-(Font)              scaled to size 15.4pt on input line 2.
+(Font)              scaled to size 15.4pt on input line 8.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 15.4pt on input line 2.
+(Font)              scaled to size 15.4pt on input line 8.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 15.4pt on input line 2.
- (./chapters/preparation/vanet/index.tex)
-(./chapters/preparation/gpsr/index.tex)
-(./chapters/preparation/digital_signature/index.tex))
+(Font)              scaled to size 15.4pt on input line 8.
+ (./chapters/preparation/vanet/index.tex
+
+LaTeX Warning: Citation `adhoc' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `vanet' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `drone' on page 2 undefined on input line 4.
+
+
 
 [2
 
-] (./chapters/eddsa/index.tex
-LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
+]
 
-(Font)              scaled to size 11.0pt on input line 1.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
-
-(Font)              scaled to size 11.0pt on input line 1.
+LaTeX Warning: Citation `vanet-challenge' on page 3 undefined on input line 41.
 
 
-LaTeX Warning: Citation `schnorr' on page 3 undefined on input line 3.
 
+LaTeX Warning: Citation `vanet-security' on page 3 undefined on input line 41.
 
-LaTeX Warning: Citation `twisted' on page 3 undefined on input line 4.
+) (./chapters/preparation/gpsr/index.tex)
+(./chapters/preparation/digital_signature/index.tex))
 
+[3] (./chapters/eddsa/index.tex (./chapters/eddsa/elliptic_curve.tex
 
-LaTeX Warning: Citation `high-speed' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Citation `8032' on page 3 undefined on input line 8.
-
-
-LaTeX Warning: Citation `rfc8446' on page 3 undefined on input line 16.
-
-
-LaTeX Warning: Citation `monero' on page 3 undefined on input line 19.
-
-
-LaTeX Warning: Citation `curve25519' on page 3 undefined on input line 25.
-
-(./chapters/eddsa/data_conversion.tex
-
-LaTeX Warning: Citation `インフォーズ' on page 3 undefined on input line 
-2.
-
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 4.
-LaTeX Font Info:    Trying loading font information for OT1+lmr on input line 4
-.
-(c:/texlive/2024/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying loading font information for OML+lmm on input line 4
-.
-
-(c:/texlive/2024/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying loading font information for OMS+lmsy on input line 
-4.
-
-(c:/texlive/2024/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying loading font information for OMX+lmex on input line 
-4.
-
-(c:/texlive/2024/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 4.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 7.69997pt on input line 4.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 5.5pt on input line 4.
-LaTeX Font Info:    Trying loading font information for U+msa on input line 4.
-
-(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying loading font information for U+msb on input line 4.
-
-(c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[3
+[4
 
 ]
+LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 11.0pt on input line 9.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
+
+(Font)              scaled to size 11.0pt on input line 9.
+LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 11.0pt on input line 9.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
+
+(Font)              scaled to size 11.0pt on input line 9.
+
+
+[5]) (./chapters/eddsa/data_conversion.tex
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
 (Font)              scaled to size 13.2pt on input line 7.
@@ -1866,19 +1951,13 @@ LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 LaTeX Font Info:    Font shape `JY3/HaranoAjiMincho-Regular.otf(0)/b/n' will be
 
 (Font)              scaled to size 13.2pt on input line 7.
-LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.0pt on input line 12.
-LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
-
-(Font)              scaled to size 11.0pt on input line 12.
 (load cache: extra_lmroman12-italic.luc)
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
 (Font)              No change on input line 12.
 
 
-[4](load cache: extra_lmroman8-regular.luc)
+[6](load cache: extra_lmroman8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 
 (Font)              scaled to size 7.69997pt on input line 53.
@@ -1888,55 +1967,50 @@ LaTeX Font Info:    Font shape `JT3/HaranoAjiMincho-Regular.otf(0)/m/n' will be
 (Font)              scaled to size 5.5pt on input line 53.
 
 
-[5]) (./chapters/eddsa/parameter.tex
-Overfull \hbox (134.46509pt too wide) in alignment at lines 4--16
- [][] 
- []
+[7])
 
+[8] (./chapters/eddsa/parameter.tex(load cache: extra_lmsans10-regular.luc)
+LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.1 on input line 16.
+(Font)              scaled to size 9.89993pt on input line 17.
+LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/n' will be
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.2 on input line 36.
-
-[6]) (./chapters/eddsa/elliptic_curve.tex
+(Font)              scaled to size 9.89993pt on input line 17.
 LaTeX Font Info:    Font shape `JT3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 11.0pt on input line 10.
+(Font)              scaled to size 9.89993pt on input line 17.
 LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
-(Font)              scaled to size 11.0pt on input line 10.
-) (./chapters/eddsa/algorithm.tex
+(Font)              scaled to size 9.89993pt on input line 17.
+ [9]) (./chapters/eddsa/algorithm.tex
 
-[7]
+[10]) (./chapters/eddsa/comparison.tex
 
-[8]) (./chapters/eddsa/comparison.tex))
+[11]))
 
-[9] (./chapters/methods/index.tex)
-
-[10
-
-] (./chapters/simulation_environment/index.tex)
-
-[11
-
-] (./chapters/experiment/index.tex)
-
-[12
-
-] (./chapters/evaluation/index.tex)
+[12] (./chapters/methods/index.tex)
 
 [13
 
-] (./chapters/conclusion/index.tex)
+] (./chapters/simulation_environment/index.tex)
 
 [14
 
-] (./chapters/acknowledgements/index.tex) (./main.bbl
+] (./chapters/experiment/index.tex)
 
 [15
+
+] (./chapters/evaluation/index.tex)
+
+[16
+
+] (./chapters/conclusion/index.tex)
+
+[17
+
+] (./chapters/acknowledgements/index.tex) (./main.bbl
+
+[18
 
 ]
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
@@ -1944,25 +2018,33 @@ undefined
 (Font)              No change on input line 6.
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
-(Font)              No change on input line 13.
+(Font)              No change on input line 11.
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
-(Font)              No change on input line 20.
+(Font)              No change on input line 16.
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
-(Font)              No change on input line 38.
+(Font)              No change on input line 27.
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
-(Font)              No change on input line 45.
+(Font)              No change on input line 32.
+LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
+undefined
+(Font)              No change on input line 39.
+LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
+undefined
+(Font)              No change on input line 46.
+LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
+undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
+undefined
+(Font)              No change on input line 71.
 )
 
-[16
+[19
 
-]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./main.aux)
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1974,52 +2056,47 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 5A4C190220879753FA80C2448203FBC6;607
-(rerunfilecheck)             After:  534A5E012A7041B45151958869CD7020;1874.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3BAE347E7D7D18432C4E35A9A30E5F20;2024.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31713 strings out of 475664
- 156564,1373583 words of node,token memory allocated
- 5198 words of node memory still in use:
-   20 hlist, 5 vlist, 28 rule, 4 math, 27 glue, 16 kern, 3 penalty, 35 glyph, 15
-12 attribute, 132 glue_spec, 155 attribute_list, 2 write, 26 user_defined nodes
-   avail lists: 1:40,2:42608,3:1157,4:497,5:323,6:58,7:4624,8:54,9:1773,10:40,11
-:168
- 53520 multiletter control sequences out of 65536+600000
- 94 fonts using 156056951 bytes
- 135i,10n,138p,1831b,1151s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 32841 strings out of 475664
+ 156557,1373583 words of node,token memory allocated
+ 5448 words of node memory still in use:
+   20 hlist, 5 vlist, 28 rule, 4 math, 25 glue, 16 kern, 3 penalty, 35 glyph, 16
+33 attribute, 132 glue_spec, 166 attribute_list, 2 write, 26 user_defined nodes
+   avail lists: 1:29,2:43301,3:342,4:533,5:284,6:62,7:4687,8:55,9:1799,10:39,11:
+254
+ 54598 multiletter control sequences out of 65536+600000
+ 98 fonts using 163888087 bytes
+ 135i,13n,138p,1835b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf>{c:/te
 xlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/f
 onts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/l
-m-mathsy.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/te
-xlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Regular.ot
-f><c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/te
-xlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive
-/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2024/tex
-mf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Bold.otf><c:/texlive/202
-4/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/tex
+m-mathsy.enc}<c:/texlive/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoA
+jiGothic-Regular.otf>{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.en
+c}<c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/tex
+live/2024/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Bold.otf><c
+:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/tex
+live/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/
+2024/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/tex
 mf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Bold.otf><c:/texlive/202
 4/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2024/tex
 mf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/
-2024/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fon
-ts/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/
-lmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texliv
-e/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fo
-nts/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/l
-mr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive
-/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (18 pages, 286159 bytes).
+2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><c:/texlive/20
+24/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts
+/type1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lm
+mi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/
+2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/font
+s/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr
+8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2
+024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts
+/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (21 pages, 341244 bytes).
 
-PDF statistics: 284 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 131072)
- 72 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 375 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
 
