@@ -3,50 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-I was expecting a `,' or a `}'---line 397 of file references.bib
- :   title={デジタル署名を用いたセキュアなV2V 
- :                                                           アドホックルーティングプロトコル},
-I'm skipping whatever remains of this entry
 Warning--empty journal in vanet-challenge
-You've used 16 entries,
+You've used 18 entries,
             1791 wiz_defined-function locations,
-            541 strings with 6017 characters,
-and the built_in function-call counts, 3930 in all, are:
-= -- 378
-> -- 136
-< -- 6
-+ -- 53
-- -- 37
-* -- 208
-:= -- 579
-add.period$ -- 50
-call.type$ -- 16
-change.case$ -- 16
+            552 strings with 6272 characters,
+and the built_in function-call counts, 4384 in all, are:
+= -- 426
+> -- 148
+< -- 7
++ -- 58
+- -- 40
+* -- 226
+:= -- 648
+add.period$ -- 57
+call.type$ -- 18
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 191
-empty$ -- 397
-format.name$ -- 37
-if$ -- 919
+cite$ -- 19
+duplicate$ -- 217
+empty$ -- 443
+format.name$ -- 40
+if$ -- 1029
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 13
-newline$ -- 82
-num.names$ -- 16
-pop$ -- 67
+int.to.str$ -- 18
+missing$ -- 14
+newline$ -- 92
+num.names$ -- 18
+pop$ -- 75
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 114
+skip$ -- 128
 stack$ -- 0
-substring$ -- 273
-swap$ -- 68
-text.length$ -- 6
+substring$ -- 297
+swap$ -- 76
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 42
-width$ -- 18
-write$ -- 173
-(There was 1 error message)
+while$ -- 47
+width$ -- 20
+write$ -- 196
+(There was 1 warning)

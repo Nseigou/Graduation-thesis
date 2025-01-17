@@ -88,4 +88,16 @@ Lawrence~C Washington.
 \newblock ディジタル署名アルゴリズム eddsa の実装性能調査.
 \newblock {\em CRYPTREC 外部評価報告書}, pages 1--108, 2021.
 
+\bibitem{ns-3}
+George~F Riley and Thomas~R Henderson.
+\newblock The ns-3 network simulator.
+\newblock In {\em Modeling and tools for network simulation}, pages 15--34.
+  Springer, 2010.
+
+\bibitem{shinato}
+階戸 弾.
+\newblock
+  デジタル署名を用いたセキュアなv2vアドホックルーティングプロトコル.
+\newblock Master's thesis, University of Gifu, 2024.
+
 \end{thebibliography}

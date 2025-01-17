@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  17 JAN 2025 22:00
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  18 JAN 2025 02:44
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2013,32 +2013,35 @@ LaTeX Font Info:    Font shape `JY3/HaranoAjiGothic-Regular.otf(0)/b/n' will be
 
 [21
 
-]
+])
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3.1 on input line 58.
-
-)
-
-[22] (./chapters/simulation_environment/index.tex)
+[22] (./chapters/simulation_environment/index.tex
+(./chapters/simulation_environment/ns-3.tex
 
 [23
 
-] (./chapters/experiment/index.tex)
+]) (./chapters/simulation_environment/communication-standards.tex
 
-[24
+[24]) (./chapters/simulation_environment/attenuation-model.tex)
+(./chapters/simulation_environment/delay-model.tex)
+(./chapters/simulation_environment/sig_parameter.tex)
+(./chapters/simulation_environment/sumo.tex))
 
-] (./chapters/evaluation/index.tex)
-
-[25
-
-] (./chapters/conclusion/index.tex)
+[25] (./chapters/experiment/index.tex)
 
 [26
 
-] (./main.bbl
+] (./chapters/evaluation/index.tex)
 
 [27
+
+] (./chapters/conclusion/index.tex)
+
+[28
+
+] (./main.bbl
+
+[29
 
 ]
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
@@ -2070,7 +2073,7 @@ undefined
 (Font)              No change on input line 77.
 
 
-[28
+[30
 
 ]
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
@@ -2079,13 +2082,12 @@ undefined
 LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
 undefined
 (Font)              No change on input line 89.
+LaTeX Font Info:    Kanji font shape `JY3/HaranoAjiGothic-Regular.otf(0)/m/it' 
+undefined
+(Font)              No change on input line 94.
 )
 
-[29]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-(./main.aux)
+[31] (./main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -2095,14 +2097,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32931 strings out of 475664
+ 32993 strings out of 475664
  156557,1373583 words of node,token memory allocated
- 2524 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 678 attribute, 132 glue_s
-pec, 74 attribute_list, 2 write, 15 user_defined nodes
-   avail lists: 1:25,2:44177,3:364,4:712,5:452,6:65,7:5123,8:55,9:1961,10:40,11:
+ 2620 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 722 attribute, 132 glue_s
+pec, 78 attribute_list, 2 write, 15 user_defined nodes
+   avail lists: 1:25,2:44129,3:364,4:712,5:454,6:65,7:5123,8:55,9:1961,10:40,11:
 330
- 54624 multiletter control sequences out of 65536+600000
+ 54644 multiletter control sequences out of 65536+600000
  102 fonts using 171717559 bytes
  135i,13n,138p,1835b,517s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf>{c:/te
@@ -2128,10 +2130,10 @@ s/type1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr
 024/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts
 /type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfon
 ts/symbols/msbm10.pfb>
-Output written on main.pdf (31 pages, 434844 bytes).
+Output written on main.pdf (33 pages, 456201 bytes).
 
-PDF statistics: 473 PDF objects out of 1000 (max. 8388607)
- 394 compressed objects within 4 object streams
- 136 named destinations out of 1000 (max. 131072)
+PDF statistics: 490 PDF objects out of 1000 (max. 8388607)
+ 408 compressed objects within 5 object streams
+ 142 named destinations out of 1000 (max. 131072)
  160 words of extra memory for PDF output out of 10000 (max. 100000000)
 
