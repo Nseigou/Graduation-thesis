@@ -1,0 +1,31 @@
+この章では, 本研究で行ったシミュレーション環境について
+述べる. シミュレーションのパラメータは表4.1の通りである.\\
+
+本研究で使用するEd25519のパラメータは以下の通りである.\\
+\setlength{\tabcolsep}{30pt}
+\begin{longtable}{ll}
+  \caption{Ed25519のパラメータ}
+  \endfirsthead
+  \hline
+  シミュレーションツール & ns-3.26 \\
+  通信規格 & IEEE 802.11p \\
+  通信プロトコル & UDP \\
+  パケットサイズ & 1024 [byte] \\
+  パケット送信間隔 & 1.0 [s] \\
+  送信電力 & 17.026 [dBm] \\
+  電力検出閾値 & -96.0 [dBm] \\
+  電波伝搬減衰モデル & 対数距離電波伝搬減衰モデル \\
+  遅延モデル & ConstantSpeedPropagationDelayModel \\
+  電波伝搬範囲 & 約300 [m] \\
+  ノード数 & 74(実験1,2), 37/74/112/148/185(実験3) \\
+  シミュレーション時間 & 300 [s] \\
+  ルーティングプロトコル & GPSR \\
+  デジタル署名 & DSA, ECDSA, EdDSA(Ed25519) \\ \hline
+\end{longtable}
+
+\input{chapters/simulation_environment/ns-3.tex}
+\input{chapters/simulation_environment/communication-standards.tex}
+\input{chapters/simulation_environment/delay-model.tex}
+\input{chapters/simulation_environment/delay-model.tex}
+\input{chapters/simulation_environment/sig_parameter.tex}
+\input{chapters/simulation_environment/sumo.tex}

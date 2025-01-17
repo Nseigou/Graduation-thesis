@@ -39,12 +39,6 @@ Brad Karp and Hsiang-Tsung Kung.
   2023.
 \newblock Supersedes FIPS 186-4.
 
-\bibitem{schnorr}
-Claus-Peter Schnorr.
-\newblock Efficient identification and signatures for smart cards.
-\newblock In {\em Advances in Cryptology—CRYPTO’89 Proceedings 9}, pages
-  239--252. Springer, 1990.
-
 \bibitem{twisted}
 Daniel~J Bernstein, Peter Birkner, Marc Joye, Tanja Lange, and Christiane
   Peters.
@@ -57,6 +51,12 @@ Daniel~J Bernstein, Peter Birkner, Marc Joye, Tanja Lange, and Christiane
 Daniel~J Bernstein, Niels Duif, Tanja Lange, Peter Schwabe, and Bo-Yin Yang.
 \newblock High-speed high-security signatures.
 \newblock {\em Journal of cryptographic engineering}, 2(2):77--89, 2012.
+
+\bibitem{schnorr}
+Claus-Peter Schnorr.
+\newblock Efficient identification and signatures for smart cards.
+\newblock In {\em Advances in Cryptology—CRYPTO’89 Proceedings 9}, pages
+  239--252. Springer, 1990.
 
 \bibitem{8032}
 Simon Josefsson and Ilari Liusvaara.
@@ -77,6 +77,11 @@ Daniel~J Bernstein.
 \newblock In {\em Public Key Cryptography-PKC 2006: 9th International
   Conference on Theory and Practice in Public-Key Cryptography, New York, NY,
   USA, April 24-26, 2006. Proceedings 9}, pages 207--228. Springer, 2006.
+
+\bibitem{edwarscurve-to-ellipticcurve}
+Lawrence~C Washington.
+\newblock {\em Elliptic curves: number theory and cryptography}.
+\newblock Chapman and Hall/CRC, 2008.
 
 \bibitem{インフォーズ}
 株式会社インフォーズ.

@@ -33,14 +33,17 @@
   作成者によって署名され, 送信後に改ざんされていないことが保証される.
 \end{enumerate}
 
-デジタル署名にはさまざまなアルゴリズムが存在する. 以下の項では,  
+デジタル署名にはさまざまなアルゴリズムが存在する. その中でも,    
 \textbf{国立標準技術研究所(National Institute of Standards and Technology, NIST)}
 による情報処理標準規格 FIPS に基づいて設計された
 \textbf{DSA(Digital Signature Algorithm)}およびその改良版である
-\textbf{ECDSA(Elliptic Curve Digital Signature Algorithm)}の
-アルゴリズムについて述べる.\\
+\textbf{ECDSA(Elliptic Curve Digital Signature Algorithm)}は, 
+V2V通信のようなリアルタイム性やリソース制約が求められる環境に
+適している. よって, 本研究ではこの2つを用いてデジタル署名を実装する.\\
+以下に, DSAとECDSAの概要を示す. \\[1em] 
 
-\subsection{DSA}
+
+\noindent {\Large\textbf{DSA}}\\
 \input{chapters/preparation/digital_signature/dsa.tex}
-\subsection{ECDSA}
+\noindent {\Large\textbf{ECDSA}}\\
 \input{chapters/preparation/digital_signature/ecdsa.tex}

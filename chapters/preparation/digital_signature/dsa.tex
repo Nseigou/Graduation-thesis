@@ -1,9 +1,9 @@
-\textbf{DSA (Digital Signature Algorithm)}は, 1993 年に FIPS 186-4として
+\indent \textbf{DSA (Digital Signature Algorithm)}は, 1993 年に FIPS 186-4として
 標準化された, DSS (Digital Signature Standard) の主要なアルゴリズムの
-1つであった. なお, 2023 年の FIPS 186-5\cite{fips186-5} では,DSAは
+1つであった. なお, 2023 年の FIPS 186-5\cite{fips186-5} では, DSAは
 新たにデジタル署名を行うことには推奨されないが, 標準策定以前に行われた
 署名の検証には引き続き利用可能とされている.\\
-\indent DSAの3つのフェーズにおける処理は以下の通りである.\\[0.5em]
+\indent DSAの3つのフェーズにおける処理は以下の通りである.\\
 \let\ltxlist\list
 \begin{breakitembox}[l]{\textbf{鍵生成}}
   　
@@ -20,9 +20,9 @@
     \[
       g\equiv a^{\frac{p-1}{q}}\pmod p
     \] 
-    を計算する. ただし,$g=1$である場合は再度$a$を選び直す.
+    を計算する. ただし, $g=1$である場合は再度$a$を選び直す.
     \item ランダムな整数$x(1<x<q)$に対し,
-    \[begin{equation}]
+    \[
       y\equiv g^x\pmod p
     \]
     を計算する.
@@ -55,7 +55,7 @@
 \begin{breakitembox}[l]{\textbf{署名検証}}
   　
   \begin{enumerate}[parsep=7pt]
-    \item 受け取った$(r,s)から, $$0<r<q$ かつ $0<s<q$ であることを確認する. 
+    \item 受け取った$(r,s)$から, $0<r<q$ かつ $0<s<q$ であることを確認する. 
     これを満たさない場合は署名を棄却する.
     \item $w\equiv s^{-1}\pmod q$ を計算する.
     \item $u_1\equiv wH(M)\pmod q$を計算する.
@@ -70,13 +70,14 @@
 \[
   g^{u_1}y^{u_2}\equiv g^{u_1+xu_2} \equiv g^{H(M)+xr}w\equiv g^{k}\pmod p
 \]
-が成り立つ. これは 
+が成り立つ. したがって, 正当なメッセージと署名に組には 
 \begin{align*}
   v &\equiv (g^{u_1}y^{u_2} \mod p) \mod q \\
     &\equiv (g^k \mod p) \mod q \\
     &\equiv r \mod q
 \end{align*}
-であることを示す.\\
+が成り立つため, $v=r$を満たすかどうかを確認することで
+署名検証が可能である.\\
 \indent ここで, メッセージや署名に対し改ざんが行われたとしよう. 
 攻撃者が, 署名検証条件 $v \equiv r \pmod{q}$ を
 満たすように操作できた場合, その攻撃は成功したとみなされる. ただし, 
@@ -94,6 +95,5 @@ $M'$のハッシュ値は$H(M')\neq H(M)$となり,
 改ざんした場合でも, 署名にはハッシュ値$H(M)$が埋め込まれているため, 
 署名検証条件は満たされない. この結果, 署名検証アルゴリズムの最終段階で
 署名が有効と判定される場合, 署名$(r, s)$もメッセージ$M$も
-改ざんされていないことが保証される.
-
+改ざんされていないことが保証される.\\[1em]
 

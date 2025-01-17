@@ -1,12 +1,23 @@
 この節ではEdDSAで使用される\textbf{ツイストエドワーズ曲線
 (Twisted Edwards Curve)}について説明する.\\
-\indent ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義される.
+\indent エドワーズ曲線は, 体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義され, 
+元$c,d\in \mathbb{F}_p, cd(cd^{4}-1)\neq 0$に対し, 
+以下の式で与えられる.
+\begin{equation}
+  x^2 + y^2 = c^2(1+dx^2y^2)
+\end{equation}
+この曲線は, 変数変換することでWeierstrass方程式(式1.1)で定まる楕円曲線と
+同型であることが知られている\cite{edwarscurve-to-ellipticcurve}.\\
+\indent ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義され, 
 異なる非零元$a,d\in \mathbb{F}_p$ に対し, 以下の式で与えられる.
 \begin{equation}
   ax^2 + y^2 = 1 + dx^2y^2
 \end{equation}
-\noindent{\large\textbf{楕円加算}}\\
-\indent 点$(x_1,y_1)$と$(x_2,x_2)$の加算式を以下のように定義する.
+ツイストエドワーズ曲線は, 通常のエドワーズ曲線(式2.1)と
+拡大体$\mathbb{F}_p (\sqrt{a})$上で同型である. この同型により, 
+ツイストエドワーズ曲線上の点集合は群をなす\cite{twisted}.\\[1em]
+\noindent{\large\textbf{ツイストエドワーズ曲線上の楕円加算}}\\
+\indent ツイストエドワーズ曲線上の点$(x_1,y_1)$と$(x_2,x_2)$の加算を以下のように定義する.
 \begin{equation}
   (x_1,y_1)+(x_2,y_2)=
   \left( 
@@ -26,9 +37,9 @@
 \begin{equation}
   \mathcal{O}=(0,1)
 \end{equation}
-\indent 曲線の方程式(2.1)に$(x,y)=(0,1)$を代入すると,
+\indent 曲線の方程式(2.2)に$(x,y)=(0,1)$を代入すると,
 \begin{equation}
-  a(0)^2 + (1)^2 = 1 + d(0)^2(1)^2
+  a\cdot 0^2 + 1^2 = 1 + d\cdot 0^{2}\cdot 1^2
 \end{equation}
 となり, 明らかに成り立つ.\\[1em]
 \noindent \textbf{(2)点の逆元}\\

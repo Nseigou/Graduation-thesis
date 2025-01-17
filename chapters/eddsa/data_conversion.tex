@@ -34,7 +34,7 @@ b_0b_1b_2b_3b_4b_5b_6b_7
 \noindent このようにして, $0x12345678$ はメモリ上で 
 $0x78, 0x56, 0x34, 0x12$ の順番に格納される.\\[1em]
 
-\noindent{\large\textbf{エンコードとデコード}}\\
+\noindent{\large\textbf{エンコードとデコード}}
 \begin{enumerate}
   \item ENC$(s)$\\
   　整数をオクテット列に変換し, データとして扱いやすくするための関数.\\
@@ -82,7 +82,7 @@ $0x78, 0x56, 0x34, 0x12$ の順番に格納される.\\[1em]
       \item $vx^2=-u \pmod p$ならば, $x\leftarrow 2^{\tfrac{p-1}{4}}x$
     \end{enumerate}
     \item[⑤　] $x=0$かつ$x_0=1$ならばデコード失敗とし, 処理を中断する.
-    \item[⑥　] $x_0$が$x \pmod 2$と異なるならば$x\leftarrow　p-x$とする.
+    \item[⑥　] $x_0$が$x \pmod 2$と異なるならば$x\leftarrow p-x$とする.
     \item[⑦　] 点$(x,y)$を出力する.
   \end{enumerate}
 \end{enumerate}
