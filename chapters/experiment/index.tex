@@ -1,0 +1,59 @@
+本研究では, 第4章で述べたシミュレーション環境を用いて4種類の
+シミュレーション実験を行った. いずれの実験でも, 以下の4パターンを調べた. 
+\begin{itemize}
+  \item 認証機構を用いない場合
+  \item DSAを用いて認証機構を追加した場合
+  \item ECDSAを用いて認証機構を追加した場合
+  \item EdDSAを用いて認証機構を追加した場合
+\end{itemize}
+\indent シミュレーション結果を評価するために, 
+以下の4つの項目について説明する. 
+\begin{enumerate}
+  \item \textbf{平均スループット(TP)}\\
+  \indent スループットとは, 単位時間あたりに正常に転送された
+  データ量のことである. 以下に示す式で定義される. ここで, 
+  $AllTxBytes$は合計転送バイト数, $TxTimes$は
+  転送にかかった時間である. \\
+  \[
+    TP = \frac{AllTxBytes}{TxTimes}\text{[kbps]}
+  \]
+
+  \item \textbf{平均遅延時間(DLT)}\\
+  \indent 遅延時間とは, パケットが送信されてから受信されるまでの
+  時間のことである. 以下に示す式で定義される. ここで,
+  $AllDelayTime$は転送にかかった時間の合計, $sumRxPackets$は
+  受信パケットの合計である. \\
+  \[
+    DLT = \frac{AllDelayTime}{sumRxPackets}\text{[ms]}
+  \]
+
+  \item \textbf{パケット配送率(PDR)}\\
+  \indent パケット配送率とは, 送信されたデータ量のうち
+  損失せずに受信されたデータ量の割合のことである. 以下に示す式で定義される. 
+  ここで, $AllTxPackets$は合計送信パケット数, $AllRxPackets$は
+  合計受信バイト数である. \\
+  \[
+    PDR = \frac{AllRxPackets}{AllTxPackets} \times 100 \text{[\%]}
+  \]
+
+  \item \textbf{オーバーヘッドサイズ(OH)}\\
+  \indent オーバーヘッドサイズとは, データの送受信に付随して発生する
+  余分なコストのことであり, ここではルーティングに使用される
+  通信データ量を指す. 以下に示す式で定義される. ここで, 
+  $AllTxKBytes$はHelloパケットを含めた全ノードの合計送信キロバイト数, 
+  $TxKBytes$はデータパケットの合計送信キロバイト数である. \\
+  \[
+    OH = AllTxKBytes - TxKBytes \text{[KB]}
+  \]
+\end{enumerate}
+
+% \indent 本研究の目的は, EdDSAの性能評価を行うことであるので, 
+% EdDSAと従来に最も処理効率の良かったECDSAの署名生成, 署名検証に
+% 関するシミュレーション結果についても評価を行う.
+
+\section{実験1}
+\input{chapters/experiment/exp1.tex}
+\section{実験2}
+\input{chapters/experiment/exp2.tex}
+\section{実験3}
+\input{chapters/experiment/exp3.tex}

@@ -1,0 +1,36 @@
+実験2は認証機構の追加が通信にどれだけの負荷を与えるのかを
+調査するための実験を行った. 
+不正ノードの存在しない環境で, 250回シミュレーションを行い, 
+平均パケット配送率, 平均遅延時間, オーバーヘッドサイズを調べた. \\
+\indent 実験の結果は以下の通りである. \\
+
+{\LARGE\textbf{図5.3}}\\
+{\LARGE\textbf{図5.4}}\\
+{\LARGE\textbf{図5.5}}\\
+
+\indent 図5.3は, 実験2におけるシミュレーションパターンごとの
+平均パケット配送率を示している. 認証機構なしでは
+\textcolor{red}{xx}\%, DSAでは\textcolor{red}{xx}\%, 
+ECDSAでは\textcolor{red}{xx}\%, EdDSAでは\textcolor{red}{xx}\%
+と, 認証機構の有無はパケット配送率に影響を与えなかった. \\
+\indent 図5.4は, 実験2におけるシミュレーションパターンごとの
+平均遅延時間を示している. 認証機構なしでは\textcolor{red}{xx}ms, 
+DSAでは\textcolor{red}{xx}ms, ECDSAでは\textcolor{red}{xx}ms,
+EdDSAでは\textcolor{red}{xx}msと, 認証機構の有無は遅延時間にも
+影響を与えなかった. \\
+{\LARGE\textbf{遅延時間は経路選択に左右されてしまうから中央値を取った方がよさそう}}\\
+\indent 図5.5は, 実験2におけるシミュレーションパターンごとの
+オーバーヘッドサイズを示している. 認証機構なしでは
+\textcolor{red}{xx}KBであったのに対し, 
+DSAでは\textcolor{red}{xx}KB, ECDSAでは\textcolor{red}{xx}KB, 
+EdDSAでは\textcolor{red}{xx}KBと, 認証機構の追加により
+オーバーヘッドサイズが大幅に増加した. これは, Helloパケットの
+データに署名が付与されていることが原因である. また, 
+EdDSAの結果をDSAとECDSAの結果と比較すると, EdDSAとDSAでは
+大きな差があったのに対し, EdDSAとECDSAではほとんど差がなかった. 
+これは, EdDSAがDSAよりも鍵長が短いが, ECDSAとは変わらないことから
+オーバーヘッドサイズに差が出なかったと考えられる. 
+なお, 本研究で使用したパラメータによるそれぞれの鍵長は, 
+DSAで2048ビット, ECDSAとEdDSAで256ビットである. \\
+
+
