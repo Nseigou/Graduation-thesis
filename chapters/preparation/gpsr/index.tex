@@ -4,14 +4,19 @@
 ネットワーク環境に適している.
 GPSRでは, 自身の位置やIPアドレスなどの情報をのせたHelloパケットを
 一定間隔で隣接ノードに送信する．
-図1.2に示すように, それぞれのノードはIPアドレスや隣接ノードの
+図\ref{fig:nodetable}に示すように, それぞれのノードはIPアドレスや隣接ノードの
 位置などの情報が記載された隣接ノードテーブルをもち, 
 受信したHelloパケットの情報を用いて隣接ノードテーブルを
 更新することにより周辺ノードの情報を把握する. 
 この隣接ノードテーブルの情報を基に, Greedy Forwarding と 
-Perimeter Forwarding を組み合わせたルーティングプロトコルを行う.\\
+Perimeter Forwarding を組み合わせたルーティングプロトコルを行う. 
 
-{\Huge 隣接ノードデーブルの図1.2を挿入}\\
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.7]{figures/nodetable.png}
+  \caption{GPSRの隣接ノードテーブル}
+  \label{fig:nodetable}
+\end{figure}
 
 \noindent {\Large\textbf{Greedy Forwarding}}\\
 \input{chapters/preparation/gpsr/greedy_forwarding.tex}

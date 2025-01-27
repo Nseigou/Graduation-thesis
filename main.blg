@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
 Warning--empty journal in vanet-challenge
-You've used 18 entries,
+You've used 19 entries,
             1791 wiz_defined-function locations,
-            552 strings with 6272 characters,
-and the built_in function-call counts, 4384 in all, are:
-= -- 426
-> -- 148
-< -- 7
-+ -- 58
-- -- 40
-* -- 226
-:= -- 648
-add.period$ -- 57
-call.type$ -- 18
-change.case$ -- 18
+            557 strings with 6397 characters,
+and the built_in function-call counts, 4630 in all, are:
+= -- 452
+> -- 152
+< -- 8
++ -- 60
+- -- 41
+* -- 237
+:= -- 683
+add.period$ -- 60
+call.type$ -- 19
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 217
-empty$ -- 443
-format.name$ -- 40
-if$ -- 1029
+cite$ -- 20
+duplicate$ -- 231
+empty$ -- 467
+format.name$ -- 41
+if$ -- 1088
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 14
-newline$ -- 92
-num.names$ -- 18
-pop$ -- 75
+int.to.str$ -- 19
+missing$ -- 15
+newline$ -- 97
+num.names$ -- 19
+pop$ -- 78
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 128
+skip$ -- 137
 stack$ -- 0
-substring$ -- 297
-swap$ -- 76
-text.length$ -- 7
+substring$ -- 316
+swap$ -- 82
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 47
-width$ -- 20
-write$ -- 196
+while$ -- 51
+width$ -- 21
+write$ -- 207
 (There was 1 warning)

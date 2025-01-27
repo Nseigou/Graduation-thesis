@@ -1,7 +1,12 @@
 Greedy Forwardingで局所最大問題が発生した場合に, 
 Perimeter Forwardingが使用される. 
-図1.5のように, 送信ノードSを中心にして宛先ノードの方向から,  
+図\ref{fig:perimeter}のように, 送信ノード$S$を中心にして宛先ノードの方向から,  
 反時計回りにノードを探索し, 最初に発見したノードを
-ネクストホップとして選択する方式である.\\
+ネクストホップとして選択する方式である.
 
-{\LARGE RightHandRulesの図1.5を挿入}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.75]{figures/perimeter.png}
+  \caption{Perimeter Forwarding}
+  \label{fig:perimeter}
+\end{figure}

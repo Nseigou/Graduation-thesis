@@ -39,6 +39,12 @@ Brad Karp and Hsiang-Tsung Kung.
   2023.
 \newblock Supersedes FIPS 186-4.
 
+\bibitem{安田}
+安田 雅哉.
+\newblock ディジタル署名 eddsa
+  で使われている曲線の安全性に関する調査及び評価.
+\newblock {\em CRYPTREC 外部評価報告書}, pages 1--47, 2020.
+
 \bibitem{twisted}
 Daniel~J Bernstein, Peter Birkner, Marc Joye, Tanja Lange, and Christiane
   Peters.

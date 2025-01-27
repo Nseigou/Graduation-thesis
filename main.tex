@@ -40,19 +40,21 @@
 \usepackage{array}
 \usepackage{itembkbx} % breakitembox環境を使う
 \usepackage{jquote}
+\usepackage{bm}
+\usepackage{pdfpages}
 
 % 目次の章タイトルを太字にする
 \renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
 
 % フォントを設定
 % unicode-mathの後でないとフォントが変更されない
-\usepackage[
-  % 多ウェイト化を有効にする
-  deluxe,
-  % jlreqで使えるようにする
-  jfm_yoko=jlreq,
-  jfm_tate=jlreqv,
-]{luatexja-preset}
+% \usepackage[
+%   % 多ウェイト化を有効にする
+%   deluxe,
+%   % jlreqで使えるようにする
+%   jfm_yoko=jlreq,
+%   jfm_tate=jlreqv,
+% ]{luatexja-preset}
 
 % jlreqの設定
 \jlreqsetup{
@@ -93,7 +95,7 @@
   \Large 学籍番号：1213033107 \\ 
   \huge 永野 正剛 \\ [0.5em]
   \Large 指導教員 \\
-  \LARGE 三嶋 美和子 教授 \\
+  {\LARGE 三嶋 美和子 教授} \\
   \LARGE 角田 有 助教 \\
 
   \vfill 
