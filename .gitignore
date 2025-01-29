@@ -5,6 +5,12 @@ out/
 *.toc
 *.aux
 *.synctex.gz
+*.bst
+*.blg
+*.log
+*.out
+*.bbl
+*.gitignore
 memo.tex
 test.tex
 
