@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  27 JAN 2025 21:19
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  29 JAN 2025 12:04
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1797,14 +1797,14 @@ Package luatex.def Info: figures/greedy.png  used on input line 11.
 
 
 [4<./figures/nodetable.png><./figures/greedy.png>]
-<figures/local.png, id=171, 604.2575pt x 315.1775pt>
+<figures/local.png, id=170, 604.2575pt x 315.1775pt>
 File: figures/local.png Graphic file (type png)
 <use figures/local.png>
 Package luatex.def Info: figures/local.png  used on input line 24.
 (luatex.def)             Requested size: 362.5573pt x 189.10796pt.
 )
 (./chapters/preparation/gpsr/perimeter_forwarding.tex
-<figures/perimeter.png, id=173, 601.24625pt x 312.16624pt>
+<figures/perimeter.png, id=172, 601.24625pt x 312.16624pt>
 File: figures/perimeter.png Graphic file (type png)
 <use figures/perimeter.png>
 Package luatex.def Info: figures/perimeter.png  used on input line 9.
@@ -2011,7 +2011,7 @@ exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
 ic/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on main.pdf (41 pages, 793749 bytes).
+Output written on main.pdf (41 pages, 793759 bytes).
 
 PDF statistics: 573 PDF objects out of 1000 (max. 8388607)
  471 compressed objects within 5 object streams
