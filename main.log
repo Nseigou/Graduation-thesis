@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  4 FEB 2025 04:05
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  4 FEB 2025 07:00
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1749,7 +1749,16 @@ LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <15.4> not available
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 15.4pt on input line 8.
  (./chapters/preparation/vanet/index.tex
-<figures/vanet.png, id=132, 605.26125pt x 316.18124pt>
+
+LaTeX Warning: Citation `adhoc' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `vanet' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Citation `drone' on page 2 undefined on input line 5.
+
+<figures/vanet.png, id=125, 605.26125pt x 316.18124pt>
 File: figures/vanet.png Graphic file (type png)
 <use figures/vanet.png>
 Package luatex.def Info: figures/vanet.png  used on input line 15.
@@ -1771,8 +1780,19 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 
 [2
 
-<./figures/vanet.png>]) (./chapters/preparation/gpsr/index.tex
-<figures/nodetable.png, id=148, 605.26125pt x 313.17pt>
+<./figures/vanet.png>]
+
+LaTeX Warning: Citation `vanet-challenge' on page 3 undefined on input line 50.
+
+
+
+LaTeX Warning: Citation `vanet-security' on page 3 undefined on input line 50.
+
+) (./chapters/preparation/gpsr/index.tex
+
+LaTeX Warning: Citation `gpsr' on page 3 undefined on input line 1.
+
+<figures/nodetable.png, id=135, 605.26125pt x 313.17pt>
 File: figures/nodetable.png Graphic file (type png)
 <use figures/nodetable.png>
 Package luatex.def Info: figures/nodetable.png  used on input line 16.
@@ -1789,12 +1809,12 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <15.4> not available
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 15.4pt on input line 21.
  (./chapters/preparation/gpsr/greedy_forwarding.tex
-<figures/greedy.png, id=159, 602.75188pt x 313.17pt>
+<figures/greedy.png, id=143, 602.75188pt x 313.17pt>
 File: figures/greedy.png Graphic file (type png)
 <use figures/greedy.png>
 Package luatex.def Info: figures/greedy.png  used on input line 12.
 (luatex.def)             Requested size: 331.51456pt x 172.24402pt.
-<figures/local.png, id=161, 604.2575pt x 315.1775pt>
+<figures/local.png, id=145, 604.2575pt x 315.1775pt>
 File: figures/local.png Graphic file (type png)
 <use figures/local.png>
 Package luatex.def Info: figures/local.png  used on input line 25.
@@ -1803,7 +1823,7 @@ Package luatex.def Info: figures/local.png  used on input line 25.
 
 [4<./figures/nodetable.png><./figures/greedy.png>])
 (./chapters/preparation/gpsr/perimeter_forwarding.tex
-<figures/perimeter.png, id=173, 601.24625pt x 312.16624pt>
+<figures/perimeter.png, id=156, 601.24625pt x 312.16624pt>
 File: figures/perimeter.png Graphic file (type png)
 <use figures/perimeter.png>
 Package luatex.def Info: figures/perimeter.png  used on input line 10.
@@ -1812,13 +1832,23 @@ Package luatex.def Info: figures/perimeter.png  used on input line 10.
 (./chapters/preparation/digital_signature/index.tex
 
 [5<./figures/local.png><./figures/perimeter.png>]
+
+LaTeX Warning: Citation `shinato' on page 6 undefined on input line 41.
+
 (./chapters/preparation/digital_signature/dsa.tex
+
+LaTeX Warning: Citation `fips186-5' on page 6 undefined on input line 3.
+
+
 
 [6]
 
 [7]
 
 [8]) (./chapters/preparation/digital_signature/ecdsa.tex
+
+LaTeX Warning: Citation `fips186-5' on page 9 undefined on input line 5.
+
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 13.2pt on input line 13.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -1831,6 +1861,9 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <13.2> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 13.2pt on input line 13.
+
+LaTeX Warning: Citation `安田' on page 9 undefined on input line 19.
+
 
 
 [9]
@@ -1856,11 +1889,46 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 
 [12] (./chapters/eddsa/index.tex
 
+LaTeX Warning: Citation `twisted' on page 13 undefined on input line 3.
+
+
+LaTeX Warning: Citation `high-speed' on page 13 undefined on input line 5.
+
+
+LaTeX Warning: Citation `schnorr' on page 13 undefined on input line 9.
+
+
+LaTeX Warning: Citation `8032' on page 13 undefined on input line 14.
+
+
+LaTeX Warning: Citation `rfc8446' on page 13 undefined on input line 17.
+
+
+LaTeX Warning: Citation `monero' on page 13 undefined on input line 19.
+
+
+LaTeX Warning: Citation `curve25519' on page 13 undefined on input line 30.
+
+
+
 [13
 
 ] (./chapters/eddsa/twisted_curve.tex
 
+LaTeX Warning: Citation `edwarscurve-to-ellipticcurve' on page 14 undefined on 
+input line 10.
+
+
+LaTeX Warning: Citation `twisted' on page 14 undefined on input line 18.
+
+
+
 [14]) (./chapters/eddsa/data_conversion.tex
+
+LaTeX Warning: Citation `インフォーズ' on page 15 undefined on input line
+ 2.
+
+
 
 [15]
 
@@ -1873,7 +1941,7 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 [20]))
 
 [21] (./chapters/methods/index.tex
-<figures/position-liar.png, id=359, 605.26125pt x 315.1775pt>
+<figures/position-liar.png, id=315, 605.26125pt x 315.1775pt>
 File: figures/position-liar.png Graphic file (type png)
 <use figures/position-liar.png>
 Package luatex.def Info: figures/position-liar.png  used on input line 24.
@@ -1883,7 +1951,7 @@ Package luatex.def Info: figures/position-liar.png  used on input line 24.
 [22
 
 <./figures/position-liar.png>]
-<figures/ip-liar.png, id=368, 599.74063pt x 312.16624pt>
+<figures/ip-liar.png, id=324, 599.74063pt x 312.16624pt>
 File: figures/ip-liar.png Graphic file (type png)
 <use figures/ip-liar.png>
 Package luatex.def Info: figures/ip-liar.png  used on input line 43.
@@ -1891,18 +1959,18 @@ Package luatex.def Info: figures/ip-liar.png  used on input line 43.
 
 
 [23<./figures/ip-liar.png>]
-<figures/signature-method.png, id=378, 600.74437pt x 312.16624pt>
+<figures/signature-method.png, id=334, 602.25pt x 307.64937pt>
 File: figures/signature-method.png Graphic file (type png)
 <use figures/signature-method.png>
-Package luatex.def Info: figures/signature-method.png  used on input line 60.
-(luatex.def)             Requested size: 360.4494pt x 187.3012pt.
-<figures/introduce.png, id=380, 604.2575pt x 310.15875pt>
+Package luatex.def Info: figures/signature-method.png  used on input line 62.
+(luatex.def)             Requested size: 361.35278pt x 184.59103pt.
+<figures/introduce.png, id=336, 604.2575pt x 310.15875pt>
 File: figures/introduce.png Graphic file (type png)
 <use figures/introduce.png>
-Package luatex.def Info: figures/introduce.png  used on input line 92.
+Package luatex.def Info: figures/introduce.png  used on input line 94.
 (luatex.def)             Requested size: 483.40666pt x 248.12733pt.
 
-Overfull \hbox (28.16255pt too wide) in paragraph at lines 92--93
+Overfull \hbox (28.16255pt too wide) in paragraph at lines 94--95
  [][] 
  []
 
@@ -1916,150 +1984,154 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [25<./figures/introduce.png>] (./chapters/simulation_environment/index.tex
 (./chapters/simulation_environment/ns-3.tex
 
+LaTeX Warning: Citation `ns-3' on page 26 undefined on input line 3.
+
+
+
 [26
 
-]) (./chapters/simulation_environment/communication-standards.tex
+]
+
+LaTeX Warning: Citation `shinato' on page 27 undefined on input line 34.
+
+) (./chapters/simulation_environment/communication-standards.tex
 
 [27]) (./chapters/simulation_environment/attenuation-model.tex)
-(./chapters/simulation_environment/delay-model.tex)
-(./chapters/simulation_environment/sumo.tex)
-(./chapters/simulation_environment/sig_parameter.tex
+(./chapters/simulation_environment/delay-model.tex
 
-[28]))
+[28]) (./chapters/simulation_environment/sumo.tex)
+(./chapters/simulation_environment/sig_parameter.tex))
 
 [29] (./chapters/experiment/index.tex
 
 [30
 
 ] (./chapters/experiment/exp1.tex
-<figures/exp1_pdr.png, id=434, 727.0362pt x 505.89pt>
+<figures/exp1_pdr.png, id=385, 727.0362pt x 505.89pt>
 File: figures/exp1_pdr.png Graphic file (type png)
 <use figures/exp1_pdr.png>
-Package luatex.def Info: figures/exp1_pdr.png  used on input line 10.
-(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
-<figures/exp1_throughput.png, id=435, 727.0362pt x 505.89pt>
-File: figures/exp1_throughput.png Graphic file (type png)
-<use figures/exp1_throughput.png>
-Package luatex.def Info: figures/exp1_throughput.png  used on input line 17.
+Package luatex.def Info: figures/exp1_pdr.png  used on input line 11.
 (luatex.def)             Requested size: 455.24411pt x 316.76712pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<figures/exp1_throughput.png, id=386, 727.0362pt x 505.89pt>
+File: figures/exp1_throughput.png Graphic file (type png)
+<use figures/exp1_throughput.png>
+Package luatex.def Info: figures/exp1_throughput.png  used on input line 18.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-[31<./figures/exp1_pdr.png>]) (./chapters/experiment/exp2.tex
 
-[32<./figures/exp1_throughput.png>]
-<figures/exp2_pdr.png, id=451, 727.0362pt x 505.89pt>
+[31]) (./chapters/experiment/exp2.tex [32<./figures/exp1_pdr.png>]
+<figures/exp2_pdr.png, id=402, 727.0362pt x 505.89pt>
 File: figures/exp2_pdr.png Graphic file (type png)
 <use figures/exp2_pdr.png>
 Package luatex.def Info: figures/exp2_pdr.png  used on input line 23.
 (luatex.def)             Requested size: 455.24411pt x 316.76712pt.
-<figures/exp2_overhead.png, id=452, 727.0362pt x 505.89pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<figures/exp2_overhead.png, id=403, 727.0362pt x 505.89pt>
 File: figures/exp2_overhead.png Graphic file (type png)
 <use figures/exp2_overhead.png>
 Package luatex.def Info: figures/exp2_overhead.png  used on input line 30.
 (luatex.def)             Requested size: 455.24411pt x 316.76712pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[33<./figures/exp2_pdr.png>]) (./chapters/experiment/exp3.tex
-
-[34<./figures/exp2_overhead.png>]
-<figures/exp3_simtime.png, id=471, 654.7662pt x 433.62pt>
+) (./chapters/experiment/exp3.tex
+<figures/exp3_simtime.png, id=407, 654.7662pt x 433.62pt>
 File: figures/exp3_simtime.png Graphic file (type png)
 <use figures/exp3_simtime.png>
 Package luatex.def Info: figures/exp3_simtime.png  used on input line 8.
 (luatex.def)             Requested size: 455.24411pt x 301.48743pt.
- [35<./figures/exp3_simtime.png>]))
 
-[36] (./chapters/evaluation/index.tex
 
-[37
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33]))
+
+[34]
+
+[35<./figures/exp1_throughput.png>]
+
+[36<./figures/exp2_pdr.png>]
+
+[37<./figures/exp2_overhead.png>]
+
+[38<./figures/exp3_simtime.png>] (./chapters/evaluation/index.tex
+
+[39
 
 ]
-<figures/memory_usages.png, id=500, 727.0362pt x 505.89pt>
+<figures/memory_usages.png, id=460, 727.0362pt x 505.89pt>
 File: figures/memory_usages.png Graphic file (type png)
 <use figures/memory_usages.png>
 Package luatex.def Info: figures/memory_usages.png  used on input line 54.
 (luatex.def)             Requested size: 455.24411pt x 316.76712pt.
 )
 
-[38<./figures/memory_usages.png>] (./chapters/conclusion/index.tex)
-
-[39
-
-] (./main.bbl
-
-[40
-
-]
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.0pt on input line 6.
-(load cache: extra_lmroman12-italic.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/it' in size <11> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.0pt on input line 6.
-LaTeX Font Info:    Font shape `JY3/gt/m/it' in size <11> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.0pt on input line 6.
-
+[40<./figures/memory_usages.png>] (./chapters/conclusion/index.tex)
 
 [41
 
-])
+] (./main.bbl)
 
-[42] (./main.aux)
+[42
+
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A694BD97AEB872C10963CBC49B6D4269;2350.
+(rerunfilecheck)             Checksum: 9F7A8660E4DC29104A2EE931E12EF2A1;2263.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33486 strings out of 475664
- 156564,1373583 words of node,token memory allocated
- 2596 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 711 attribute, 132 glue_s
-pec, 77 attribute_list, 2 write, 15 user_defined nodes
-   avail lists: 1:24,2:44453,3:367,4:594,5:446,6:77,7:5218,8:52,9:1958,10:40,11:
-322
- 55023 multiletter control sequences out of 65536+600000
- 84 fonts using 81139239 bytes
+ 33437 strings out of 475664
+ 156562,1373583 words of node,token memory allocated
+ 2572 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 700 attribute, 132 glue_s
+pec, 76 attribute_list, 2 write, 15 user_defined nodes
+   avail lists: 1:24,2:45898,3:367,4:579,5:445,6:71,7:4917,8:52,9:1957,10:40,11:
+56
+ 54995 multiletter control sequences out of 65536+600000
+ 83 fonts using 81007231 bytes
  135i,13n,138p,1835b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf>{c:/te
-xlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2024/texmf-di
-st/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/l
-m-mathsy.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/te
-xlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/202
-4/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2024/tex
-mf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/texmf-di
-st/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist/fonts
-/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2024/texmf-dis
-t/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2024/texmf-dist/fon
-ts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2024/texmf-
-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><c:/texlive/2024/texmf-di
-st/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
-ic/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><c:
-/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-
-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
-lic/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/t
-exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-d
-ist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
-ic/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb>
-Output written on main.pdf (44 pages, 968570 bytes).
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2024/te
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvip
+s/lm/lm-mathsy.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
+<c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texli
+ve/2024/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/20
+24/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2024/te
+xmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2024/texmf-dist
+/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2024/tex
+mf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2024/texmf-di
+st/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2024/
+texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb><c:/texlive/2024/te
+xmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type
+1/public/lm/lmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi6.p
+fb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/
+texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/typ
+e1/public/lm/lmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb
+><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/t
+exmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type
+1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on main.pdf (44 pages, 960884 bytes).
 
-PDF statistics: 626 PDF objects out of 1000 (max. 8388607)
- 508 compressed objects within 6 object streams
- 172 named destinations out of 1000 (max. 131072)
- 184 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 568 PDF objects out of 1000 (max. 8388607)
+ 454 compressed objects within 5 object streams
+ 151 named destinations out of 1000 (max. 131072)
+ 176 words of extra memory for PDF output out of 10000 (max. 100000000)
 

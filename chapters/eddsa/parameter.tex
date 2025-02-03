@@ -1,5 +1,6 @@
-EdDSAのパラメータは以下の通りである.\\
-\begin{table}[htbp]
+EdDSAのパラメータを表\ref{tab:eddsa-parameters}にまとめる.\\
+\begin{table}[htbp]\label{tab:eddsa-parameters}
+  \caption{EdDSAのパラメータ}
   \centering
   \begin{tabular}{cp{10cm}}
     \hline
@@ -15,12 +16,12 @@ EdDSAのパラメータは以下の通りである.\\
     $B$ & $E$上のベースポイント. $B\neq (0,1)$\\
     $n$ & $c\leq n < b$となる整数.\\ \hline
   \end{tabular}
-  \caption{EdDSAのパラメータ}
 \end{table}
 
-本研究で使用するEd25519のパラメータは以下の通りである.\\
+本研究で使用するEd25519のパラメータを表\ref{tab:ed25519-parameters}にまとめる.\\
 \begin{longtable}{cc}
   \caption{Ed25519のパラメータ}
+  \label{tab:ed25519-parameters}
   \endfirsthead
   \hline
   \multicolumn{1}{c}{パラメータ} & \multicolumn{1}{c}{値, または関数} \\ \hline \hline
