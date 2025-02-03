@@ -12,16 +12,16 @@
 内部不正ノードとは, ネットワーク内において意図的に不正行為を行う
 ノードのことで, 外部から侵入した攻撃者や, 内部の
 信頼されたノードが乗っ取られることで発生することが一般的である. 
-図\ref{fig:position-liar}のように, 送信ノード$S$が宛先ノード$D$に送信するとする. 
-このとき, 本来$S$は電波伝搬範囲内で$D$に最も近い$A$を中継ノードとして
-選択するべきであるが, ノード$B$が位置情報を詐称して$B'$の位置にいると
-偽装することで, $B$を選択し, 誤ったルーティングをしてしまう. 
-このようにして, $B$は本来$D$が受けるべきデータを窃取し, 
+図\ref{fig:position-liar}に示すように, 送信ノードSが宛先ノードDに送信するとする. 
+このとき, 本来Sは電波伝搬範囲内でDに最も近いAを中継ノードとして
+選択するべきであるが, ノードBが位置情報を詐称してB'の位置にいると
+偽装することで, Bを選択し, 誤ったルーティングをしてしまう. 
+このようにして, Bは本来Dが受けるべきデータを窃取し, 
 情報伝達を妨害できる.
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.7]{figures/position-liar.png}
+  \includegraphics[scale=0.6]{figures/position-liar.png}
   \caption{位置情報詐称ノード}
   \label{fig:position-liar}
 \end{figure}
@@ -40,7 +40,7 @@ IPアドレスを詐称することで外部ノードがネットワークに不
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.7]{figures/ip-liar.png}
+  \includegraphics[scale=0.6]{figures/ip-liar.png}
   \caption{IPアドレス詐称ノード}
   \label{fig:ip-liar}
 \end{figure}
@@ -49,15 +49,15 @@ IPアドレスを詐称することで外部ノードがネットワークに不
 行われない. そこで, 本研究では, デジタル署名を用いてノードの情報が
 正しいものであるかを検証し, なりすましや改ざんを排除するようにした. \\
 \indent では, その仕組みを説明する. 図\ref{fig:signature-method}に示すように, 
-ノード$A$からノード$B$にデータを送信する場合, $A$は認証局による
-署名をデータに付与して$B$に送信する. 
-$B$は受信したデータに対して署名の検証を行い, ネットワーク内の
+ノードAからノードBにデータを送信する場合, Aは認証局による
+署名をデータに付与してBに送信する. 
+Bは受信したデータに対して署名の検証を行い, ネットワーク内の
 正当なノードから正しいデータが送信されたかを確認する.
 \newpage
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.7]{figures/signature-method.png}
+  \includegraphics[scale=0.6]{figures/signature-method.png}
   \caption{本研究におけるデジタル署名の使用方法}
   \label{fig:signature-method}
 \end{figure}

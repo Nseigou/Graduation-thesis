@@ -77,9 +77,9 @@ $0x78, 0x56, 0x34, 0x12$ の順番に格納される.\\[1em]
     \item[④　] 以下の処理を行う.
     \begin{enumerate}
       \item $u=y^2-1$, $v=dy^2+1$として
-      $x=uv^3(uv^7)^{\tfrac{p-5}{8}}\pmod p$を計算する.
-      \item $vx^2 \neq \pm  u \pmod p$ならばデコード失敗とし, 処理を中断する.
-      \item $vx^2=-u \pmod p$ならば, $x\leftarrow 2^{\tfrac{p-1}{4}}x$
+      $x\equiv uv^3(uv^7)^{\tfrac{p-5}{8}}\pmod p$を計算する.
+      \item $vx^2 \not\equiv \pm  u \pmod p$ならばデコード失敗とし, 処理を中断する.
+      \item $vx^2\equiv -u \pmod p$ならば, $x\leftarrow 2^{\tfrac{p-1}{4}}x$
     \end{enumerate}
     \item[⑤　] $x=0$かつ$x_0=1$ならばデコード失敗とし, 処理を中断する.
     \item[⑥　] $x_0$が$x \pmod 2$と異なるならば$x\leftarrow p-x$とする.

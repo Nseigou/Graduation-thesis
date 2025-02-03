@@ -25,12 +25,12 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
     \item 秘密鍵$Pk$を使って, ハッシュ値 $h=H(Pk)$ を計算する.
     \item $h$の後半部分 $h[32]$ から $h[63]$ を使って, 
     \begin{center}
-      $r = H(h[32]\mid\mid \cdots \mid\mid h[63] \mid\mid M) \mod L$
+      $r \equiv H(h[32]\mid\mid \cdots \mid\mid h[63] \mid\mid M) \mod L$
     \end{center}
     を計算し, デコードする.
     \item $R=rB$ を計算し, エンコードする.
     \item $k=H(R \mid\mid A \mid\mid M)$ を計算する.
-    \item 鍵生成の際 $s$ を用いて $S=r+ks \pmod L$ を計算し, エンコードする.
+    \item 鍵生成の際 $s$ を用いて $S\equiv r+ks \pmod L$ を計算し, エンコードする.
     \item $(R,S)$を署名とする.
   \end{enumerate}
 \end{breakitembox}

@@ -16,12 +16,12 @@ ECDSAは, DSAよりも短い鍵長で同等の安全性を確保できるため,
 \[
   y^2+a_1y+a_3y=x^3+a_2x^2+a_4x+a_6　　(a_1,a_2,a_3,a_4,a_6\in\mathbb{F}_p)
 \]
+この式をWeierstrass方程式という\cite{安田}. 
 特に, $p\neq 2,3$の場合, 以下の標準形に簡略化できることが知られている. 
 \begin{equation}\label{weierstrass}
   y^2=x^3+ax+b　　(a,b\in\mathbb{F}_p)
 \end{equation}
-この式をWeierstrass方程式という\cite{安田}. \\
-\indent 楕円曲線(式\ref{weierstrass})の判別式$\Delta$が
+\indent 楕円曲線(式(\ref{weierstrass}))の判別式$\Delta$が
 \[
   \Delta=-16(4a^3+27b^2)\neq 0
 \]
@@ -100,7 +100,7 @@ $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕�
 \indent ある基準点$G$に対し, $P = kG$となる楕円曲線上の点$P$が与えられたとき, 
 $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$から$k$を
 求めるのは計算量的に困難であることが知られている. 
-これを\textbf{楕円曲線上の離散対数問題（ECDLP: Elliptic Curve Discrete Logarithm Problem）}という.\\[1em]
+これを\textbf{楕円曲線上の離散対数問題(Elliptic Curve Discrete Logarithm Problem, ECDLP)}という.\\[1em]
 
 \noindent{\large\textbf{ECDSAのアルゴリズム}}\\
 \indent ECDSAの3つのフェーズにおける処理は以下の通りである.
@@ -123,7 +123,7 @@ $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$�
     \item $k$を$2\leq d\leq n-1$の範囲からランダムに選び, $kG$の
     $x$座標を$r$とする.
     \item メッセージ$M$に対し, ハッシュ関数$H$を用いて, $h=H(M)$を計算する.
-    \item $s=k^{-1}(h+dr)\pmod n$を計算する.
+    \item $s\equiv k^{-1}(h+dr)\pmod n$を計算する.
     \item $(r,s)$をメッセージ$M$に対する署名とし, 
     $M$とともに受信者に送信する.
   \end{enumerate}
@@ -134,19 +134,18 @@ $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$�
   　
   \begin{enumerate}[parsep=7pt]
     \item $(M,(r,s))$を受け取り, $h=H(M)$を計算する. 
-    \item $u\equiv s^{-1}h\pmod n$を計算する.
-    \item $v\equiv s^{-1}r\pmod n$を計算する.
-    \item 楕円曲線上の点として,
-    \begin{equation}
+    \item $u\equiv s^{-1}h\pmod n$, $v\equiv s^{-1}r\pmod n$を計算する.
+    \item 楕円曲線上の点として, 
+    \[
       Q'=(x',y')=uG+vQ
-    \end{equation}
+    \]
     を計算する.
     \item $Q'$の$x$座標$x'$が$r$と一致すれば, 署名を受理する.
     そうでなければ不正な署名とみなし, 棄却する.
   \end{enumerate}
 \end{breakitembox}
 \vspace{1em}
-\indent ECDSAは次の式で$r=x'$が成立し, 正しく機能することが確かめられる.\\
+\indent 正当なメッセージと署名の組$(M, (r, s))$に対し, 
 \begin{align*}
   Q'  &= uG + vQ\\
       &= s^{-1}hG + s^{-1}rQ \\
@@ -156,3 +155,5 @@ $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$�
       &= s^{-1}skG \\
       &= kG
 \end{align*}
+が成り立つため, $Q'$の$x$座標が$r$と一致するかどうかを確認することで
+署名検証が可能である.\\

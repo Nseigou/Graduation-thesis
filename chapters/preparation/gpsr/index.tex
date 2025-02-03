@@ -1,19 +1,19 @@
-\textbf{GPSR(Greedy Perimeter Stateless Routing)}\cite{gpsr}は, 
+\textbf{GPSR (Greedy Perimeter Stateless Routing)}\cite{gpsr}は, 
 位置情報を利用してパケットを転送する位置ベースの
-ルーティングプロトコルであり, VANETのような動的で高速に変化する
+ルーティングプロトコルであり, VANETのような動的かつ高速に変化する
 ネットワーク環境に適している.
 GPSRでは, 自身の位置やIPアドレスなどの情報をのせたHelloパケットを
 一定間隔で隣接ノードに送信する．
 図\ref{fig:nodetable}に示すように, それぞれのノードはIPアドレスや隣接ノードの
 位置などの情報が記載された隣接ノードテーブルをもち, 
 受信したHelloパケットの情報を用いて隣接ノードテーブルを
-更新することにより周辺ノードの情報を把握する. 
-この隣接ノードテーブルの情報を基に, Greedy Forwarding と 
-Perimeter Forwarding を組み合わせたルーティングプロトコルを行う. 
+更新することにより, 周辺ノードの情報を把握する. 
+この隣接ノードテーブルの情報をもとに, Greedy Forwarding と 
+Perimeter Forwarding を組み合わせたルーティングプロトコルに従う. 
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.7]{figures/nodetable.png}
+  \includegraphics[scale=0.55]{figures/nodetable.png}
   \caption{GPSRの隣接ノードテーブル}
   \label{fig:nodetable}
 \end{figure}

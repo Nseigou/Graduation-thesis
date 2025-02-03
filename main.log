@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  29 JAN 2025 12:04
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  4 FEB 2025 04:05
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1505,30 +1505,30 @@ Package: lltjp-array 2024-07-21 Patch to array for LuaTeX-ja
 (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count390
@@ -1584,7 +1584,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 66.
 (./main.out) (./main.out)
 \@outlinefile=\write6
 
@@ -1601,34 +1601,34 @@ F (HO)
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )))(load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.4pt on input line 80.
+(Font)              scaled to size 15.4pt on input line 71.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.4pt on input line 80.
+(Font)              scaled to size 15.4pt on input line 71.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 22.0pt on input line 87.
+(Font)              scaled to size 22.0pt on input line 78.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 22.0pt on input line 87.
+(Font)              scaled to size 22.0pt on input line 78.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 18.7pt on input line 94.
+(Font)              scaled to size 18.7pt on input line 85.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 18.7pt on input line 94.
+(Font)              scaled to size 18.7pt on input line 85.
 
 
 [1
 
 ]
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 27.5pt on input line 107.
+(Font)              scaled to size 27.5pt on input line 98.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 27.5pt on input line 107.
+(Font)              scaled to size 27.5pt on input line 98.
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <27.5> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 107.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 98.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 27.5pt on input line 107.
+(Font)              scaled to size 27.5pt on input line 98.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <27.5> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 107.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 98.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 27.5pt on input line 107.
+(Font)              scaled to size 27.5pt on input line 98.
  (./main.toc
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 1.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
@@ -1716,18 +1716,18 @@ Overfull \hbox (14.443pt too wide) detected at line 18
 
 [1](load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 22.0pt on input line 114.
+(Font)              scaled to size 22.0pt on input line 105.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 22.0pt on input line 114.
+(Font)              scaled to size 22.0pt on input line 105.
 (load cache: extra_lmsans10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <22> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 114.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 22.0pt on input line 114.
+(Font)              scaled to size 22.0pt on input line 105.
 LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <22> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 114.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 22.0pt on input line 114.
+(Font)              scaled to size 22.0pt on input line 105.
  (./chapters/introduction/index.tex)
 
 
@@ -1776,7 +1776,7 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 File: figures/nodetable.png Graphic file (type png)
 <use figures/nodetable.png>
 Package luatex.def Info: figures/nodetable.png  used on input line 16.
-(luatex.def)             Requested size: 423.67998pt x 219.21748pt.
+(luatex.def)             Requested size: 332.8947pt x 172.24402pt.
 
 
 [3]
@@ -1792,27 +1792,26 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 <figures/greedy.png, id=159, 602.75188pt x 313.17pt>
 File: figures/greedy.png Graphic file (type png)
 <use figures/greedy.png>
-Package luatex.def Info: figures/greedy.png  used on input line 11.
-(luatex.def)             Requested size: 421.92343pt x 219.21748pt.
-
-
-[4<./figures/nodetable.png><./figures/greedy.png>]
-<figures/local.png, id=170, 604.2575pt x 315.1775pt>
+Package luatex.def Info: figures/greedy.png  used on input line 12.
+(luatex.def)             Requested size: 331.51456pt x 172.24402pt.
+<figures/local.png, id=161, 604.2575pt x 315.1775pt>
 File: figures/local.png Graphic file (type png)
 <use figures/local.png>
-Package luatex.def Info: figures/local.png  used on input line 24.
+Package luatex.def Info: figures/local.png  used on input line 25.
 (luatex.def)             Requested size: 362.5573pt x 189.10796pt.
-)
+
+
+[4<./figures/nodetable.png><./figures/greedy.png>])
 (./chapters/preparation/gpsr/perimeter_forwarding.tex
-<figures/perimeter.png, id=172, 601.24625pt x 312.16624pt>
+<figures/perimeter.png, id=173, 601.24625pt x 312.16624pt>
 File: figures/perimeter.png Graphic file (type png)
 <use figures/perimeter.png>
-Package luatex.def Info: figures/perimeter.png  used on input line 9.
-(luatex.def)             Requested size: 450.93356pt x 234.1241pt.
+Package luatex.def Info: figures/perimeter.png  used on input line 10.
+(luatex.def)             Requested size: 330.68645pt x 171.69196pt.
 ))
+(./chapters/preparation/digital_signature/index.tex
 
 [5<./figures/local.png><./figures/perimeter.png>]
-(./chapters/preparation/digital_signature/index.tex
 (./chapters/preparation/digital_signature/dsa.tex
 
 [6]
@@ -1859,7 +1858,7 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 
 [13
 
-] (./chapters/eddsa/elliptic_curve.tex
+] (./chapters/eddsa/twisted_curve.tex
 
 [14]) (./chapters/eddsa/data_conversion.tex
 
@@ -1874,30 +1873,30 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 [20]))
 
 [21] (./chapters/methods/index.tex
-<figures/position-liar.png, id=357, 605.26125pt x 315.1775pt>
+<figures/position-liar.png, id=359, 605.26125pt x 315.1775pt>
 File: figures/position-liar.png Graphic file (type png)
 <use figures/position-liar.png>
 Package luatex.def Info: figures/position-liar.png  used on input line 24.
-(luatex.def)             Requested size: 423.67998pt x 220.62274pt.
+(luatex.def)             Requested size: 363.15953pt x 189.10796pt.
 
 
 [22
 
 <./figures/position-liar.png>]
-<figures/ip-liar.png, id=366, 599.74063pt x 312.16624pt>
+<figures/ip-liar.png, id=368, 599.74063pt x 312.16624pt>
 File: figures/ip-liar.png Graphic file (type png)
 <use figures/ip-liar.png>
 Package luatex.def Info: figures/ip-liar.png  used on input line 43.
-(luatex.def)             Requested size: 419.81558pt x 218.51488pt.
+(luatex.def)             Requested size: 359.84715pt x 187.3012pt.
 
 
 [23<./figures/ip-liar.png>]
-<figures/signature-method.png, id=376, 600.74437pt x 312.16624pt>
+<figures/signature-method.png, id=378, 600.74437pt x 312.16624pt>
 File: figures/signature-method.png Graphic file (type png)
 <use figures/signature-method.png>
 Package luatex.def Info: figures/signature-method.png  used on input line 60.
-(luatex.def)             Requested size: 420.51819pt x 218.51488pt.
-<figures/introduce.png, id=378, 604.2575pt x 310.15875pt>
+(luatex.def)             Requested size: 360.4494pt x 187.3012pt.
+<figures/introduce.png, id=380, 604.2575pt x 310.15875pt>
 File: figures/introduce.png Graphic file (type png)
 <use figures/introduce.png>
 Package luatex.def Info: figures/introduce.png  used on input line 92.
@@ -1932,25 +1931,71 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30
 
-] (./chapters/experiment/exp1.tex) (./chapters/experiment/exp2.tex
+] (./chapters/experiment/exp1.tex
+<figures/exp1_pdr.png, id=434, 727.0362pt x 505.89pt>
+File: figures/exp1_pdr.png Graphic file (type png)
+<use figures/exp1_pdr.png>
+Package luatex.def Info: figures/exp1_pdr.png  used on input line 10.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
+<figures/exp1_throughput.png, id=435, 727.0362pt x 505.89pt>
+File: figures/exp1_throughput.png Graphic file (type png)
+<use figures/exp1_throughput.png>
+Package luatex.def Info: figures/exp1_throughput.png  used on input line 17.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
 
-[31]) (./chapters/experiment/exp3.tex
 
-[32]))
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33] (./chapters/evaluation/index.tex
 
-[34
 
-])
+[31<./figures/exp1_pdr.png>]) (./chapters/experiment/exp2.tex
 
-[35] (./chapters/conclusion/index.tex)
+[32<./figures/exp1_throughput.png>]
+<figures/exp2_pdr.png, id=451, 727.0362pt x 505.89pt>
+File: figures/exp2_pdr.png Graphic file (type png)
+<use figures/exp2_pdr.png>
+Package luatex.def Info: figures/exp2_pdr.png  used on input line 23.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
+<figures/exp2_overhead.png, id=452, 727.0362pt x 505.89pt>
+File: figures/exp2_overhead.png Graphic file (type png)
+<use figures/exp2_overhead.png>
+Package luatex.def Info: figures/exp2_overhead.png  used on input line 30.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
 
-[36
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[33<./figures/exp2_pdr.png>]) (./chapters/experiment/exp3.tex
+
+[34<./figures/exp2_overhead.png>]
+<figures/exp3_simtime.png, id=471, 654.7662pt x 433.62pt>
+File: figures/exp3_simtime.png Graphic file (type png)
+<use figures/exp3_simtime.png>
+Package luatex.def Info: figures/exp3_simtime.png  used on input line 8.
+(luatex.def)             Requested size: 455.24411pt x 301.48743pt.
+ [35<./figures/exp3_simtime.png>]))
+
+[36] (./chapters/evaluation/index.tex
+
+[37
+
+]
+<figures/memory_usages.png, id=500, 727.0362pt x 505.89pt>
+File: figures/memory_usages.png Graphic file (type png)
+<use figures/memory_usages.png>
+Package luatex.def Info: figures/memory_usages.png  used on input line 54.
+(luatex.def)             Requested size: 455.24411pt x 316.76712pt.
+)
+
+[38<./figures/memory_usages.png>] (./chapters/conclusion/index.tex)
+
+[39
 
 ] (./main.bbl
 
-[37
+[40
 
 ]
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
@@ -1966,30 +2011,30 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.0pt on input line 6.
 
 
-[38
+[41
 
 ])
 
-[39] (./main.aux)
+[42] (./main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1448869FE9B1622ECC00165C7C975BCC;2341.
+(rerunfilecheck)             Checksum: A694BD97AEB872C10963CBC49B6D4269;2350.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33402 strings out of 475664
- 195709,1373583 words of node,token memory allocated
- 2572 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 700 attribute, 132 glue_s
-pec, 76 attribute_list, 2 write, 15 user_defined nodes
-   avail lists: 1:19,2:45135,3:353,4:537,5:465,6:75,7:5218,8:52,9:1971,10:40,11:
+ 33486 strings out of 475664
+ 156564,1373583 words of node,token memory allocated
+ 2596 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 711 attribute, 132 glue_s
+pec, 77 attribute_list, 2 write, 15 user_defined nodes
+   avail lists: 1:24,2:44453,3:367,4:594,5:446,6:77,7:5218,8:52,9:1958,10:40,11:
 322
- 54968 multiletter control sequences out of 65536+600000
+ 55023 multiletter control sequences out of 65536+600000
  84 fonts using 81139239 bytes
- 135i,13n,138p,1835b,614s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 135i,13n,138p,1835b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf>{c:/te
 xlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2024/texmf-di
 st/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/l
@@ -2011,10 +2056,10 @@ exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
 ic/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on main.pdf (41 pages, 793759 bytes).
+Output written on main.pdf (44 pages, 968570 bytes).
 
-PDF statistics: 573 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 161 named destinations out of 1000 (max. 131072)
+PDF statistics: 626 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 172 named destinations out of 1000 (max. 131072)
  184 words of extra memory for PDF output out of 10000 (max. 100000000)
 

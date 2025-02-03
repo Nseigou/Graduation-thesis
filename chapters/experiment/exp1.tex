@@ -1,24 +1,36 @@
 実験1では, 認証機構が正しく機能していることを確認するための実験を
 行った. 3章で述べた2種類の不正ノードを3個ずつ用意し, 全ノードの
 約8\%(5個のノード)を不正ノードに設定した. そのような環境で
-250回シミュレーションを行い, スループットと平均パケット配送率(PDR)を
+250回シミュレーションを行い, 平均パケット配送率(PDR)とスループットを
 調べた. \\
 \indent 実験の結果は以下の通りである. \\
 
-{\LARGE\textbf{図5.1}}\\
-{\LARGE\textbf{図5.2}}\\
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{figures/exp1_pdr.png}
+  \caption{不正ノードが存在する環境での平均パケット配送率}
+  \label{fig:exp1_pdr}
+\end{figure}
 
-\indent 図5.2は, 実験1におけるシミュレーションパターンごとの
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{figures/exp1_throughput.png}
+  \caption{不正ノードが存在する環境でのスループット}
+  \label{fig:exp1_throughput}
+\end{figure}
+
+
+\indent 図\ref{fig:exp1_pdr}は, 実験1におけるシミュレーションパターンごとの
 平均パケット配送率を示している. 認証機構なしの場合に
-\textcolor{red}{xx}\%であるのに対し, DSAでは\textcolor{red}{xx}\%, 
-ECDSAでは\textcolor{red}{xx}\%, EdDSAでは\textcolor{red}{xx}\%と, 
+48.2 \%であるのに対し, DSAでは88.15 \%, 
+ECDSAでは86.62 \%, EdDSAでは84.48 \%と, 
 認証機構を追加したことで平均パケット配送率が
-約\textcolor{red}{xx}\%向上した. \\
-\indent 図5.1は, 実験1におけるシミュレーションパターンごとの
+約30 \%向上した. \\
+\indent 図\ref{fig:exp1_throughput}は, 実験1におけるシミュレーションパターンごとの
 平均スループットを示している. 認証機構なしの場合に
-\textcolor{red}{xx}kbpsであるのに対し, 
-DSAでは\textcolor{red}{xx}kbps, ECDSAでは\textcolor{red}{xx}kbps,
-EdDSAでは\textcolor{red}{xx}kbpsと, 認証機構を追加することで
+4.2kbpsであるのに対し, 
+DSAでは7.6kbps, ECDSAでは7.5kbps,
+EdDSAでは7.3kbpsと, 認証機構を追加することで
 平均パケット配送率同様, スループットも向上した. \\
 \indent これらの結果は, 認証機構の追加により 
 不正ノードが排除されたことで, 経路選択を行う際に正当なノードのみを

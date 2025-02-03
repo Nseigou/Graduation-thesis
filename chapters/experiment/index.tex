@@ -17,14 +17,13 @@
   \[
     TP = \frac{AllTxBytes}{TxTimes}\text{[kbps]}
   \]
-
-  \item \textbf{平均遅延時間(DLT)}\\
+  \item \textbf{遅延時間(DT)}\\
   \indent 遅延時間とは, パケットが送信されてから受信されるまでの
   時間のことである. 以下に示す式で定義される. ここで,
-  $AllDelayTime$は転送にかかった時間の合計, $sumRxPackets$は
-  受信パケットの合計である. \\
+  $TxPacketTime$は送信ノードがパケットを送信した時間, 
+  $RxPacketTime$は宛先ノードがパケットを受信した時間である. \\
   \[
-    DLT = \frac{AllDelayTime}{sumRxPackets}\text{[ms]}
+    DT = RxPacketTime - TxPacketTime \text{[ms]}
   \]
 
   \item \textbf{パケット配送率(PDR)}\\
