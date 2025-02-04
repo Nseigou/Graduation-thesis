@@ -1,7 +1,7 @@
 \indent 実験3では, 認証機構の処理能力(計算効率)を評価するための実験を行った. 
 不正ノードの存在しない環境でノード数を37, 74, 112, 148, 185に設定して
 250回ずつシミュレーションを行い, それぞれの実行にかかった時間を調べた.\\
-\indent 実験の結果は以下の通りである. \\
+\indent 実験の結果は以下の通りである. 
 
 \begin{figure}
   \centering
@@ -9,7 +9,7 @@
   \caption{ノード数によるシミュレーション実行時間の変化}
   \label{fig:exp3_simtime}
 \end{figure}
-
+\clearpage
 \setlength{\tabcolsep}{4pt}
 \begin{longtable}{
     >{\raggedright\arraybackslash}p{3cm}
@@ -67,21 +67,30 @@
   \endfirsthead
   \hline
   \multicolumn{1}{c}{プロトコル} &
-  \multicolumn{1}{c}{署名作成時間 $[\mu s]$} &
-  \multicolumn{1}{c}{署名検証時間 $[\mu s]$} \\ \hline \hline
-  ECDSA & $371.020$ & $336.938$ \\
-  Ed25519 & $31.349$ & $97.036$ \\ \hline
+  \multicolumn{1}{c}{署名作成時間 $[ms]$} &
+  \multicolumn{1}{c}{署名検証時間 $[ms]$} \\ \hline \hline
+  ECDSA & $0.371$ & $0.336$ \\
+  Ed25519 & $0.031$ & $0.097$ \\ \hline
 \end{longtable}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{figures/memory_usages.png}
+  \caption{メモリ使用量}
+  \label{fig:memory_usages}
+\end{figure}
 
 \indent 図\ref{fig:exp3_simtime}はシミュレーションパターンごとのノード数による
 実行時間の変化を近似してグラフ化したものを, 表\ref{tab:exp3_simtime}はその具体的な
-値を示したものである. さらに, 表\ref{tab:exp3_sigtime}にはECDSAとEdDSAにおいて, 1回の署名作成と
-署名検証にかかった時間を示した. \\
-\indent 図\ref{fig:exp3_simtime}, 表\ref{tab:exp3_sigtime}より, 
-EdDSA, ECDSA, DSAの順番で実行時間が短いのがわかる. また, 
-表\ref{tab:exp3_sigtime}に示すように, EdDSAがECDSAに比べて
-署名生成, 署名検証にかかる時間が短いことから, EdDSAは
-3つの署名方式の中で最も計算効率が良いということが確かめられた. 
-さらに, ECDSAとEdDSAの計算効率の差はノード数が増加するほど, 
-実行時間全体に与える影響が大きなっており, EdDSAが
-よりスケーラビリティに優れていることを示唆している. 
+値を示したものである. 表\ref{tab:exp3_sigtime}にはECDSAとEdDSAにおいて, 
+1回の署名作成と署名検証にかかった時間を示した. 表\ref{fig:memory_usages}は, 
+ノード数74の場合のメモリの使用量を示したものである. \\
+\indent ECDSAとEdDSAに注目して結果を評価する. 図\ref{fig:exp3_simtime}, 
+表\ref{tab:exp3_sigtime}より, Ed25519, ECDSAの順番で実行時間が短く, その差は
+ノード数が増加するほど大きくなっている. また, 表\ref{tab:exp3_sigtime}より, 
+Ed25519がECDSAに比べて署名生成, 署名検証にかかる時間が短いことから, Ed25519は
+ECDSAよりも計算効率が良いということが確かめられた. さらに, 
+図\ref{fig:memory_usages}より, Ed25519のメモリの使用量がECDSAよりも
+少ないことがわかる. これらの結果は, Ed25519がECDSAよりもスケーラビリティに
+優れていることを示唆している. 
+
