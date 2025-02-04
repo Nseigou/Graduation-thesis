@@ -82,13 +82,11 @@
 \indent \textbf{GPSR (Greedy Perimeter Stateless Routing)}\cite{gpsr}は, ノードの位置情報と
 IPアドレスを用いるルーティングプロトコルである. 各ノードは, 以下の処理を行い, 
 ルーティングを構築する. 
-\begin{itembox}[l]{GPSRの処理}
-  \begin{itemize}
-    \item 自身の位置情報とIPアドレスを載せたHelloパケットを一定間隔で
-    ブロードキャストする.
-    \item 受信したHelloパケットの情報を用いて隣接ノードテーブルを更新する.
-  \end{itemize}
-\end{itembox}
+\begin{itemize}
+\item 自身の位置情報とIPアドレスを載せたHelloパケットを一定間隔で
+ブロードキャストする.
+\item 受信したHelloパケットの情報を用いて隣接ノードテーブルを更新する.
+\end{itemize}
 
 \noindent\textbf{(2) EdDSA}\\
 \indent \textbf{EdDSA}は,  2011年にDaniel J. Bernsteinらによって提案され, 
@@ -281,14 +279,29 @@ GPSRモジュールに追加するコーディングを行った. \\
     \begin{tabular}{c|crr} \hline
         評価基準 & 認証無し & ECDSA & EdDSA \\ \hline \hline
         署名生成時間[ms] & 署名無し & $0.371$ & $0.031$ \\
-        署名検証時間[ms] & 署名無し & $0.336$ & $0.097$ \\
-        メモリ使用量[KB] & $73742.9$ & $151699.0$ & $106226.0$ \\ \hline
+        署名検証時間[ms] & 署名無し & $0.336$ & $0.097$ \\ \hline
     \end{tabular}
 \end{table}
+\vspace{-5mm}
+\begin{table}[h]
+    \centering
+    \caption{ノード数によるメモリ使用量}
+    \label{tab:exp3_memory}
+    \begin{tabular}{c|cccc} \hline
+        Number of nodes & \multicolumn{4}{c}{メモリ使用量 [KB]} \\ \cline{2-5}
+                       & No Auth. & DSA & ECDSA & Ed25519 \\ \hline \hline
+        37  &  70,939.4  &  72,023.3  &   93,749.3  &   80,647.1  \\
+        74  &  74,089.7  &  74,989.3  &  151,853  &  106,442  \\
+        112 &  77,070.1  &  78,134.7  &  254,247  &  151,401  \\
+        148 &  80,749.9  &  81,752.5  &  409,965  &  219,102  \\
+        185 &  84,548.1  &  85,541.4  &  560,753  &  285,191  \\ \hline
+    \end{tabular}
+\end{table}
+\vspace{-3mm}
+  
 
 表\ref{tab:exp3_simtime}は, シミュレーションパターンごとのノード数による実行時間の変化を, 
-表\ref{tab:exp3_sig}はECDSAとEdDSAが1回の署名作成と署名検証にかかった時間と, 
-ノード数74の場合のメモリの使用量を示したものである. \\
+表\ref{tab:exp3_sig}はECDSAとEdDSAが1回の署名作成と署名検証にかかった時間を示したものである. \\
 \indent ECDSAとEdDSAに注目して結果を評価すると, EdDSAの方が実行時間, 署名の生成と
 検証の時間が短く, メモリ使用量も小さかった. これらの結果は, EdDSAがECDSAよ
 りもスケーラビリティに優れていることを示唆している. 
