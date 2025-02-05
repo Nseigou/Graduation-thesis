@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{shinato}
+階戸 弾.
+\newblock
+  デジタル署名を用いたセキュアなv2vアドホックルーティングプロトコル.
+\newblock Master's thesis, University of Gifu, 2024.
+
 \bibitem{adhoc}
 Ram Ramanathan and Jason Redi.
 \newblock A brief overview of ad hoc networks: challenges and directions.
@@ -15,16 +21,11 @@ Hafez Seliem, Reza Shahidi, Mohamed~Hossam Ahmed, and Mohamed~S Shehata.
 \newblock Drone-based highway-vanet and das service.
 \newblock {\em IEEE Access}, 6:20125--20137, 2018.
 
-\bibitem{shinato}
-階戸 弾.
-\newblock
-  デジタル署名を用いたセキュアなv2vアドホックルーティングプロトコル.
-\newblock Master's thesis, University of Gifu, 2024.
-
 \bibitem{vanet-challenge}
-K~Tanuja, TM~Sushma, M~Bharathi, and KH~Arun.
-\newblock A survey on vanet technologies.
-\newblock 2015.
+M~Shahid Anwer and Chris Guy.
+\newblock A survey of vanet technologies.
+\newblock {\em Journal of Emerging Trends in Computing and Information
+  Sciences}, 5(9):661--671, 2014.
 
 \bibitem{vanet-security}
 Richard~Gilles Engoulou, Martine Bella{\"\i}che, Samuel Pierre, and Alejandro
@@ -50,6 +51,12 @@ Brad Karp and Hsiang-Tsung Kung.
 \newblock ディジタル署名 eddsa
   で使われている曲線の安全性に関する調査及び評価.
 \newblock {\em CRYPTREC 外部評価報告書}, pages 1--47, 2020.
+
+\bibitem{ns-3}
+George~F Riley and Thomas~R Henderson.
+\newblock The ns-3 network simulator.
+\newblock In {\em Modeling and tools for network simulation}, pages 15--34.
+  Springer, 2010.
 
 \bibitem{twisted}
 Daniel~J Bernstein, Peter Birkner, Marc Joye, Tanja Lange, and Christiane
@@ -100,10 +107,14 @@ Lawrence~C Washington.
 \newblock ディジタル署名アルゴリズム eddsa の実装性能調査.
 \newblock {\em CRYPTREC 外部評価報告書}, pages 1--108, 2021.
 
-\bibitem{ns-3}
-George~F Riley and Thomas~R Henderson.
-\newblock The ns-3 network simulator.
-\newblock In {\em Modeling and tools for network simulation}, pages 15--34.
-  Springer, 2010.
+\bibitem{openssl-eddsa}
+{OpenSSL Project}.
+\newblock {\em {OpenSSL: Ed25519 and Ed448 Signatures}}.
+
+\bibitem{sumo}
+K.~G. Lim et~al.
+\newblock Sumo enhancement for vehicular ad hoc network (vanet) simulation.
+\newblock In {\em 2017 IEEE 2nd International Conference on Automatic and
+  Intelligent Systems (I2CACIS)}, pages 86--91. IEEE, 2017.
 
 \end{thebibliography}

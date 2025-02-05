@@ -3,46 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-Warning--empty journal in vanet-challenge
-You've used 19 entries,
+You've used 21 entries,
             1791 wiz_defined-function locations,
-            557 strings with 6397 characters,
-and the built_in function-call counts, 4630 in all, are:
-= -- 452
-> -- 152
-< -- 8
-+ -- 60
-- -- 41
-* -- 237
-:= -- 683
-add.period$ -- 60
-call.type$ -- 19
-change.case$ -- 19
+            567 strings with 6617 characters,
+and the built_in function-call counts, 5140 in all, are:
+= -- 508
+> -- 158
+< -- 9
++ -- 63
+- -- 42
+* -- 263
+:= -- 748
+add.period$ -- 66
+call.type$ -- 21
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 231
-empty$ -- 467
-format.name$ -- 41
-if$ -- 1088
+cite$ -- 21
+duplicate$ -- 258
+empty$ -- 527
+format.name$ -- 42
+if$ -- 1214
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 15
-newline$ -- 97
-num.names$ -- 19
-pop$ -- 78
+int.to.str$ -- 21
+missing$ -- 16
+newline$ -- 106
+num.names$ -- 21
+pop$ -- 84
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 137
+skip$ -- 154
 stack$ -- 0
-substring$ -- 316
-swap$ -- 82
-text.length$ -- 8
+substring$ -- 365
+swap$ -- 94
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 51
-width$ -- 21
-write$ -- 207
-(There was 1 warning)
+warning$ -- 0
+while$ -- 58
+width$ -- 23
+write$ -- 228

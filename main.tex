@@ -42,6 +42,7 @@
 \usepackage{jquote}
 \usepackage{bm}
 \usepackage{pdfpages}
+\usepackage{multicol} % 複数列の箇条書き
 
 % 目次の章タイトルを太字にする
 \renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
@@ -106,6 +107,8 @@
 \input{chapters/introduction/index.tex}
 \chapter[　　 準備]{準備}
 \input{chapters/preparation/index.tex}
+\chapter[　　 関連研究]{関連研究}
+\input{chapters/related_works/index.tex}
 \chapter[　　 EdDSA]{EdDSA}
 \input{chapters/eddsa/index.tex}
 \chapter[　　 提案手法]{提案手法}
@@ -121,7 +124,7 @@
 \input{chapters/conclusion/index.tex}
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}  % 目次に追加
-% \input{chapters/acknowledgements/index.tex}
+\input{chapters/acknowledgements/index.tex}
 \bibliographystyle{unsrt}
 \bibliography{references}
 
