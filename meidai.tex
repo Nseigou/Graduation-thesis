@@ -1,6 +1,6 @@
 % コンパイルコマンド    
-% platex abs.tex
-% dvipdfmx abs.dvi
+% platex meidai.tex
+% dvipdfmx meidai.dvi
 
 \documentclass[a4j,9pt,twocolumn]{jsarticle}
 
@@ -88,7 +88,7 @@ EdDSA (Edwards-curve Digital Signature Algorithm)を組み込むことにした.
 行った. 
 \section{関連技術, 関連研究}
 \noindent \textbf{(1) GPSR}\\
-\indent \textbf{GPSR (Greedy Perimeter Stateless Routing)}\cite{gpsr}は, ノードの位置情報と
+\indent \textbf{GPSR (Greedy Perimeter Stateless Routing)}は, ノードの位置情報と
 IPアドレスを用いるルーティングプロトコルである. 各ノードは, 以下の処理を行い, 
 ルーティングを構築する. 
 \begin{itemize}
@@ -113,32 +113,13 @@ EdDSAは, ECDSAに比べて演算が高速で, シンプルかつセキュアで
     署名生成に使用する乱数は, メッセージと秘密鍵を入力としたハッシュ値であるため, 
     乱数が漏洩したとしても, ハッシュ関数の原像計算困難性より, 
     秘密鍵を直接求めることができない. 
-
-
-    % ECDSAでは、署名生成に使用される乱数（nonce）がランダムに生成されるため、  
-    % もし乱数が予測可能であったり、異なるメッセージ間で同じ乱数が再利用された場合、  
-    % 数学的な式変形によって秘密鍵を直接計算できるリスクがある。  
-    % これにより、ECDSAのセキュリティは乱数の生成の安全性に大きく依存しており、  
-    % 乱数の管理が適切に行われないと致命的な脆弱性となる。  
-
-    % 一方、EdDSAでは、署名生成に使用する乱数 `r` は、メッセージと秘密鍵をハッシュ関数に  
-    % 入力して計算することで決定論的に生成される。これにより、乱数の予測や重複の問題を防ぐことができる。  
-
-    % しかし、EdDSAのセキュリティが優れている本質的な理由は、この決定論的な性質ではなく、  
-    % 署名計算の設計にある。EdDSAの署名 `(R, S)` は、追加のハッシュ関数 `H(R, 公開鍵, メッセージ)` を含む形で  
-    % 計算されるため、仮に `r` の値が漏洩したとしても、秘密鍵 `d` を直接求めることができる数式が存在しない。  
-    % そのため、ECDSAのように乱数 `r` が攻撃者に知られたり重複したりしても、秘密鍵の漏洩につながることはない。  
-
-    % つまり、EdDSAは**「決定論的な乱数生成」によって乱数管理の失敗を防ぐ**だけでなく、  
-    % **「署名計算の設計」自体が乱数の漏洩を許容できる構造となっている**ため、ECDSAに比べて  
-    % セキュリティ上のリスクが大幅に低減されている。  
 \end{description}
 \smallskip
 \begin{description}[labelwidth=3mm, labelsep=2mm]
-    \item[(ii)] \textbf{乱数生成の回避}\\
+    \item[(ii)] \textbf{非決定的な乱数生成の回避}\\
     一般に, 非決定的な乱数を安全に生成するには, 処理コストが高いとされる.
     EdDSAでは非決定的な乱数を鍵生成でのみ使用しており, 署名生成, 署名検証では
-    それを使用しない. そのため, 署名の生成と検証が一定時間で行われ, 非決定的な乱数を使用するアルゴリズムに比べて
+    それを生成しない. そのため, ECDSAのように非決定的な乱数を複数回生成するアルゴリズムに比べて
     高速に処理することができる.
 \end{description}
 \smallskip
@@ -277,7 +258,7 @@ GPSRモジュールに追加するコーディングを行った. \\
     \label{tab:exp2} 
     \begin{tabular}{l|rrrr} \hline
         評価基準 & 認証無し & DSA & ECDSA & EdDSA \\ \hline \hline
-        \footnotesize{median of Delay[ms]} & $6.88$ & $6.13$ & $6.20$ & $84.48$ \\
+        \footnotesize{median of Delay[ms]} & $6.88$ & $6.13$ & $6.20$ & $6.42$ \\
         \small{mode of Delay[ms]} & $[6.0, 7.0)$ & $[2.0, 3.0)$ & $[2.0, 3.0)$ & $[6.0, 7.0)$ \\
         PDR[\%] & $83.21$ & $87.80$ & $86.89$ & $87.39$ \\
         Overhead[KB] & $2694.3$ & $5982.8$ & $5384.2$ & $5364.5$ \\ \hline
@@ -340,8 +321,10 @@ GPSRモジュールに追加するコーディングを行った. \\
 \end{table}
 \vspace{-3mm}
   
-\indent ECDSAとEdDSAに注目して結果を評価すると, EdDSAの方が実行時間, 署名の生成と
-検証の時間が短く, メモリ使用量も小さかった. これらの結果は, EdDSAがECDSAよ
+\indent ECDSAとEdDSAに注目して結果を評価すると, 
+EdDSAの方が実行時間, 署名の生成と検証の時間が短く, 
+メモリ使用量も少ない. また, ノード数の増加に伴う実行時間と
+メモリ使用量の増加が小さい. これらの結果は, EdDSAがECDSAよ
 りもスケーラビリティに優れていることを示唆している. これは, 
 EdDSAの設計上の特徴である高速な処理能力が実験環境においても十分に発揮されたと考えられる. 
 
@@ -349,11 +332,12 @@ EdDSAの設計上の特徴である高速な処理能力が実験環境におい
 \indent 実験結果から, EdDSAはECDSAよりも計算効率が高いことが確かめられた. 
 したがって, 階戸のプロトコルにおいて, EdDSAはECDSAよりも効率的な
 認証方式として利用できるといえる. \\
+\indent また, 本実験では, 階戸が実験に使用したコードを参考にしたが, 
+署名の生成が厳密には正しく行えていないことを発見し, 
+これを修正したことも本研究の成果のひとつである. \\
 \indent 今後は, 送受信ノードの数やノードの動き，通信のリンク状況などの要件を変更して
 シミュレーションを行い, 多様な実験環境での影響を調べ, EdDSAのVANETへの
 適用可能性の調査を進めるとともに, より効率的な認証方法の探求も進めていきたい. 
-
-
 
 
 \noindent\hrulefill % 参考文献の上に線を引く
@@ -367,11 +351,11 @@ EdDSAの設計上の特徴である高速な処理能力が実験環境におい
         Internet Engineering Task Force (IETF), 
         https://tex2e.github.io/rfc-translater/html/rfc8032.html, 
         2017.
-    \bibitem{gpsr} Brad Karp and H. T. Kung, 
-        \textit{GPSR: Greedy Perimeter Stateless Routing for Wireless Networks},
-        Proceedings of the 6th annual international conference on Mobile computing and networking,
-        pp. 243-254, 
-        2000.
+    % \bibitem{gpsr} Brad Karp and H. T. Kung, 
+    %     \textit{GPSR: Greedy Perimeter Stateless Routing for Wireless Networks},
+    %     Proceedings of the 6th annual international conference on Mobile computing and networking,
+    %     pp. 243-254, 
+    %     2000.
     \bibitem{eddsa} Daniel J Bernstein, Niels Duif, Tanja Lange, Peter Schwabe, and Bo-Yin Yang,
         \textit{High-speed high-security signatures}, Journal of Cryptographic Engineering,
         2-17, 2011.
@@ -380,20 +364,3 @@ EdDSAの設計上の特徴である高速な処理能力が実験環境におい
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
-
-
-
-
-
-
-
-
-
-% \section{まとめ}
-% 通常の論文等ではこのように得られた成果をまとめた結論を書いて終わるのですが，
-% 研究の進捗状況を報告する普段の研究会の発表では，結論を書くことは難しいかもしれません．
-% また，既に一定の成果が得られている場合でも，卒論・修論の締切が差し迫った時期を除き，
-% 卒論・修論に向けてさらに研究を進める予定であると思います．
-% そのような場合には，この節のタイトルを例えば「まとめと今後の研究計画」などとして，
-% まず現在までに得られている成果をまとめたのち，
-% 今後の研究計画を簡潔に書いてください．

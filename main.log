@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  6 FEB 2025 07:48
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024)  (format=lualatex 2024.11.22)  11 FEB 2025 02:59
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1814,19 +1814,19 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 
 ] (./chapters/preparation/index.tex(load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 15.4pt on input line 8.
+(Font)              scaled to size 15.4pt on input line 9.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 15.4pt on input line 8.
+(Font)              scaled to size 15.4pt on input line 9.
 LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <15.4> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 8.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 15.4pt on input line 8.
+(Font)              scaled to size 15.4pt on input line 9.
 LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <15.4> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 8.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 15.4pt on input line 8.
+(Font)              scaled to size 15.4pt on input line 9.
  (./chapters/preparation/vanet/index.tex
-<figures/vanet.png, id=150, 605.26125pt x 316.18124pt>
+<figures/vanet.png, id=151, 605.26125pt x 316.18124pt>
 File: figures/vanet.png Graphic file (type png)
 <use figures/vanet.png>
 Package luatex.def Info: figures/vanet.png  used on input line 15.
@@ -1849,14 +1849,13 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 [2
 
 <./figures/vanet.png>]) (./chapters/preparation/gpsr/index.tex
-<figures/nodetable.png, id=167, 605.26125pt x 313.17pt>
+
+[3]
+<figures/nodetable.png, id=178, 605.26125pt x 313.17pt>
 File: figures/nodetable.png Graphic file (type png)
 <use figures/nodetable.png>
 Package luatex.def Info: figures/nodetable.png  used on input line 16.
 (luatex.def)             Requested size: 332.8947pt x 172.24402pt.
-
-
-[3]
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <15.4> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
@@ -1866,25 +1865,26 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <15.4> not available
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 15.4pt on input line 21.
  (./chapters/preparation/gpsr/greedy_forwarding.tex
-<figures/greedy.png, id=180, 602.75188pt x 313.17pt>
+<figures/greedy.png, id=181, 481.8pt x 312.16624pt>
 File: figures/greedy.png Graphic file (type png)
 <use figures/greedy.png>
 Package luatex.def Info: figures/greedy.png  used on input line 12.
-(luatex.def)             Requested size: 331.51456pt x 172.24402pt.
-<figures/local.png, id=183, 604.2575pt x 315.1775pt>
+(luatex.def)             Requested size: 264.99081pt x 171.69196pt.
+
+
+[4<./figures/nodetable.png><./figures/greedy.png>]
+<figures/local.png, id=193, 488.32437pt x 310.66063pt>
 File: figures/local.png Graphic file (type png)
 <use figures/local.png>
 Package luatex.def Info: figures/local.png  used on input line 25.
-(luatex.def)             Requested size: 332.34265pt x 173.34816pt.
-
-
-[4<./figures/nodetable.png><./figures/greedy.png>])
+(luatex.def)             Requested size: 268.57922pt x 170.86386pt.
+)
 (./chapters/preparation/gpsr/perimeter_forwarding.tex
-<figures/perimeter.png, id=194, 601.24625pt x 312.16624pt>
+<figures/perimeter.png, id=195, 420.57124pt x 312.16624pt>
 File: figures/perimeter.png Graphic file (type png)
 <use figures/perimeter.png>
 Package luatex.def Info: figures/perimeter.png  used on input line 10.
-(luatex.def)             Requested size: 330.68645pt x 171.69196pt.
+(luatex.def)             Requested size: 231.3149pt x 171.69196pt.
 ))
 (./chapters/preparation/digital_signature/index.tex
 
@@ -1911,15 +1911,6 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 
 
 [9]
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <18.7> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 18.7pt on input line 59.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <18.7> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 59.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 18.7pt on input line 59.
-
 
 [10](load cache: extra_lmroman8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
@@ -1938,12 +1929,12 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 [14
 
 ]
-<figures/position-liar.png, id=302, 605.26125pt x 315.1775pt>
+<figures/position-liar.png, id=303, 426.59375pt x 312.16624pt>
 File: figures/position-liar.png Graphic file (type png)
 <use figures/position-liar.png>
 Package luatex.def Info: figures/position-liar.png  used on input line 38.
-(luatex.def)             Requested size: 363.15953pt x 189.10796pt.
-<figures/ip-liar.png, id=304, 599.74063pt x 312.16624pt>
+(luatex.def)             Requested size: 255.95822pt x 187.3012pt.
+<figures/ip-liar.png, id=305, 599.74063pt x 312.16624pt>
 File: figures/ip-liar.png Graphic file (type png)
 <use figures/ip-liar.png>
 Package luatex.def Info: figures/ip-liar.png  used on input line 45.
@@ -1951,12 +1942,12 @@ Package luatex.def Info: figures/ip-liar.png  used on input line 45.
 
 
 [15<./figures/position-liar.png><./figures/ip-liar.png>]
-<figures/signature-method.png, id=316, 602.25pt x 307.64937pt>
+<figures/signature-method.png, id=317, 602.25pt x 307.64937pt>
 File: figures/signature-method.png Graphic file (type png)
 <use figures/signature-method.png>
 Package luatex.def Info: figures/signature-method.png  used on input line 64.
 (luatex.def)             Requested size: 361.35278pt x 184.59103pt.
-<figures/introduce.png, id=319, 604.2575pt x 310.15875pt>
+<figures/introduce.png, id=320, 604.2575pt x 310.15875pt>
 File: figures/introduce.png Graphic file (type png)
 <use figures/introduce.png>
 Package luatex.def Info: figures/introduce.png  used on input line 96.
@@ -2019,7 +2010,7 @@ Overfull \hbox (4.28346pt too wide) in paragraph at lines 5--19
 ] (./chapters/experiment/exp1.tex
 
 [32]
-<figures/exp1_pdr.png, id=484, 727.0362pt x 505.89pt>
+<figures/exp1_pdr.png, id=485, 727.0362pt x 505.89pt>
 File: figures/exp1_pdr.png Graphic file (type png)
 <use figures/exp1_pdr.png>
 Package luatex.def Info: figures/exp1_pdr.png  used on input line 12.
@@ -2027,7 +2018,7 @@ Package luatex.def Info: figures/exp1_pdr.png  used on input line 12.
 
 
 [33<./figures/exp1_pdr.png>]
-<figures/exp1_throughput.png, id=491, 727.0362pt x 505.89pt>
+<figures/exp1_throughput.png, id=492, 727.0362pt x 505.89pt>
 File: figures/exp1_throughput.png Graphic file (type png)
 <use figures/exp1_throughput.png>
 Package luatex.def Info: figures/exp1_throughput.png  used on input line 19.
@@ -2037,7 +2028,7 @@ Package luatex.def Info: figures/exp1_throughput.png  used on input line 19.
 [34
 
 <./figures/exp1_throughput.png>]
-<figures/exp2_pdr.png, id=501, 727.0362pt x 505.89pt>
+<figures/exp2_pdr.png, id=502, 727.0362pt x 505.89pt>
 File: figures/exp2_pdr.png Graphic file (type png)
 <use figures/exp2_pdr.png>
 Package luatex.def Info: figures/exp2_pdr.png  used on input line 23.
@@ -2045,7 +2036,7 @@ Package luatex.def Info: figures/exp2_pdr.png  used on input line 23.
 
 
 [35<./figures/exp2_pdr.png>]
-<figures/exp2_overhead.png, id=509, 727.0362pt x 505.89pt>
+<figures/exp2_overhead.png, id=510, 727.0362pt x 505.89pt>
 File: figures/exp2_overhead.png Graphic file (type png)
 <use figures/exp2_overhead.png>
 Package luatex.def Info: figures/exp2_overhead.png  used on input line 30.
@@ -2055,7 +2046,7 @@ Package luatex.def Info: figures/exp2_overhead.png  used on input line 30.
 [36
 
 <./figures/exp2_overhead.png>]) (./chapters/experiment/exp3.tex
-<figures/exp3_simtime.png, id=520, 654.7662pt x 433.62pt>
+<figures/exp3_simtime.png, id=521, 654.7662pt x 433.62pt>
 File: figures/exp3_simtime.png Graphic file (type png)
 <use figures/exp3_simtime.png>
 Package luatex.def Info: figures/exp3_simtime.png  used on input line 8.
@@ -2063,7 +2054,7 @@ Package luatex.def Info: figures/exp3_simtime.png  used on input line 8.
 
 
 [37<./figures/exp3_simtime.png>]
-<figures/exp3_memory.png, id=527, 654.7662pt x 433.62pt>
+<figures/exp3_memory.png, id=528, 654.7662pt x 433.62pt>
 File: figures/exp3_memory.png Graphic file (type png)
 <use figures/exp3_memory.png>
 Package luatex.def Info: figures/exp3_memory.png  used on input line 76.
@@ -2113,21 +2104,33 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B702D86BEBEF0F1C9AC5BC9EAA3EB032;2506.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 1BEE02FF5F223DFE468789A869F75A60;2506
+(rerunfilecheck)             After:  B702D86BEBEF0F1C9AC5BC9EAA3EB032;2506.
 )
 
 Here is how much of LuaTeX's memory you used:
- 33680 strings out of 475664
- 156562,1373583 words of node,token memory allocated
- 3134 words of node memory still in use:
-   13 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 944 attribute, 135 glue_s
-pec, 99 attribute_list, 2 write, 16 user_defined nodes
-   avail lists: 1:19,2:44333,3:367,4:578,5:447,6:77,7:5024,8:52,9:1978,10:40,11:
+ 33675 strings out of 475664
+ 156557,1373583 words of node,token memory allocated
+ 3086 words of node memory still in use:
+   13 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 922 attribute, 135 glue_s
+pec, 97 attribute_list, 2 write, 16 user_defined nodes
+   avail lists: 1:40,2:44333,3:367,4:594,5:468,6:70,7:5024,8:52,9:1978,10:40,11:
 314
- 55179 multiletter control sequences out of 65536+600000
- 84 fonts using 81139239 bytes
+ 55173 multiletter control sequences out of 65536+600000
+ 82 fonts using 77223703 bytes
  135i,13n,138p,1835b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'Item.78'
 <c:/texlive/2024/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf>{c:/te
 xlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2024/texmf-di
 st/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/l
@@ -2149,10 +2152,10 @@ exlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publ
 ic/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on main.pdf (48 pages, 1011112 bytes).
+Output written on main.pdf (48 pages, 1000665 bytes).
 
-PDF statistics: 683 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 187 named destinations out of 1000 (max. 131072)
+PDF statistics: 685 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 188 named destinations out of 1000 (max. 131072)
  200 words of extra memory for PDF output out of 10000 (max. 100000000)
 

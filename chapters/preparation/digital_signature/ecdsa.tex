@@ -38,7 +38,7 @@ $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕�
 \indent 楕円曲線上の点$P=(x_1,y_1)$と$Q=(x_2,y_2)$の加算 $P+Q$ を
 以下のように定義する.
 \begin{enumerate}
-  \item[(i)　] 2点$P,Q$を通る直線が$y$軸と平行でない場合(図1.6)：
+  \item[(i)　] 2点$P,Q$を通る直線が$y$軸と平行でない場合%(図1.6)：
   \begin{enumerate}
     \item[1.　] 点$P,Q$を通る直線$L$を引く.
     \[
@@ -56,14 +56,14 @@ $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕�
       P+Q=R'
     \]
   \end{enumerate}
-  {\LARGE\textbf{図1.6を挿入}}\\
+  % {\LARGE\textbf{図1.6を挿入}}\\
   \item[(ii)　] 2点$P,Q$を通る直線$L$が$y$軸と平行である場合：\\
   \indent この場合, 直線$L$は2点$P,Q$以外で楕円曲線$E$と交わらない.\\ 
   \indent 無限遠点$\mathcal{O}$が$P+Q$となる.
   \[
     P+Q=\mathcal{O}
   \]
-  \item[(iii)　] 2点$P,Q$が同一の点である場合(図1.7)：\\
+  \item[(iii)　] 2点$P,Q$が同一の点である場合%(図1.7)：\\
   \begin{enumerate}
     \item[1.　] 点$P$における接線$L'$を引く. 
     \[
@@ -81,7 +81,7 @@ $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕�
       P+Q=2P=R'
     \]
   \end{enumerate}
-  {\Huge\textbf{図1.7を挿入}}
+  % {\Huge\textbf{図1.7を挿入}}
   \item[(iv)　] $P=\mathcal{O}$または$Q=\mathcal{O}$である場合：\\
   \indent 無限遠点は加算において加法単位元の役割を果たす.
   \[
@@ -120,7 +120,7 @@ $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$�
 \begin{breakitembox}[l]{\textbf{署名生成}}
   　
   \begin{enumerate}[parsep=7pt]
-    \item $k$を$2\leq d\leq n-1$の範囲からランダムに選び, $kG$の
+    \item $k$を$2\leq k\leq n-1$の範囲からランダムに選び, $kG$の
     $x$座標を$r$とする.
     \item メッセージ$M$に対し, ハッシュ関数$H$を用いて, $h=H(M)$を計算する.
     \item $s\equiv k^{-1}(h+dr)\pmod n$を計算する.
