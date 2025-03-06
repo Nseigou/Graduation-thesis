@@ -14,7 +14,7 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
     最後のバイト($h[31]$)の最上位ビットを0に, 最上位2ビット目を1に設定したものを
     リトルエンディアン形式の整数として解釈し, スカラー $s \pmod L$を生成する. 
     ただし, スカラー値$s$は 8 の倍数で，ちょうど 255 ビットとなる.
-    \item 基準点$B$を使って$A = sB$を計算し, $ENCE(A)$を公開鍵とする. 
+    \item 基準点$B$を使って$A = sB$を計算し, ENCE$(A)$を公開鍵とする. 
   \end{enumerate}
 \end{breakitembox}
 \vspace{2em}
@@ -27,10 +27,10 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
     \begin{center}
       $r \equiv H(h[32]\mid\mid \cdots \mid\mid h[63] \mid\mid M) \pmod L$
     \end{center}
-    を計算し, デコードする.
-    \item $R=rB$ を計算し, エンコードする.
+    を計算し, r\leftarrow DEC$(r)$とする.
+    \item $R=rB$ を計算し, ENCE$(R)$によりエンコードする.
     \item $k=H(R \mid\mid A \mid\mid M)$ を計算する.
-    \item 鍵生成の際に計算した $s$ を用いて $S\equiv r+ks \pmod L$ を計算し, エンコードする.
+    \item 鍵生成の際に計算した $s$ を用いて $S\equiv r+ks \pmod L$ を計算し, ENCE$(S)$によりエンコードする.
     \item $(R,S)$を署名とする.
   \end{enumerate}
 \end{breakitembox}
@@ -40,9 +40,9 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
 　
   \begin{enumerate}[parsep=7pt]
     \item メッセージ$M$と署名$(R,S)$を受け取る.
-    \item $R'=DECE(R)$ として, $R$をデコードする.
-    \item $S'=DEC(S)$ として, $S$をデコードする.
-    \item $A'=DECE(A)$ として, $A$をデコードする.
+    \item $R'=$DECE$(R)$ として, $R$をデコードする.
+    \item $S'=$DEC$(S)$ として, $S$をデコードする.
+    \item $A'=$DECE$(A)$ として, $A$をデコードする.
     \item 2～4でデコードに失敗した場合や$0\leq S<L$の範囲外である場合, 
     署名を棄却する.
     \item $k'=H(R' \mid\mid A' \mid\mid M)$ を計算する.
@@ -50,3 +50,12 @@ Ed25519 における3つのアルゴリズムの手順を以下に述べる.\\
     そうでなければ, 署名は無効である.
   \end{enumerate}
 \end{breakitembox}
+% \begin{breakitembox}[l]{\textbf{署名検証}}
+% 　
+%   \begin{enumerate}[parsep=7pt]
+%     \item メッセージ$M$と署名$(R,S)$を受け取る.
+%     \item 公開鍵$A$を用いて, $k'=H(R \mid\mid A \mid\mid M)$ を計算する.
+%     \item $8SB=8R+8k'A$ が成り立てば, 署名は有効である.
+%     そうでなければ, 署名は無効である.
+%   \end{enumerate}
+% \end{breakitembox}

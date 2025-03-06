@@ -3,44 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: references.bib
-You've used 21 entries,
+Warning--empty journal in 安田
+Warning--empty journal in インフォーズ
+You've used 23 entries,
             1791 wiz_defined-function locations,
-            567 strings with 6617 characters,
-and the built_in function-call counts, 5140 in all, are:
-= -- 508
-> -- 158
-< -- 9
-+ -- 63
-- -- 42
-* -- 263
-:= -- 748
-add.period$ -- 66
-call.type$ -- 21
-change.case$ -- 20
+            575 strings with 6905 characters,
+and the built_in function-call counts, 5545 in all, are:
+= -- 543
+> -- 170
+< -- 10
++ -- 68
+- -- 45
+* -- 277
+:= -- 801
+add.period$ -- 72
+call.type$ -- 23
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 258
-empty$ -- 527
-format.name$ -- 42
-if$ -- 1214
+cite$ -- 25
+duplicate$ -- 280
+empty$ -- 577
+format.name$ -- 45
+if$ -- 1313
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 16
-newline$ -- 106
-num.names$ -- 21
-pop$ -- 84
+int.to.str$ -- 23
+missing$ -- 17
+newline$ -- 115
+num.names$ -- 23
+pop$ -- 102
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 154
+skip$ -- 168
 stack$ -- 0
-substring$ -- 365
-swap$ -- 94
-text.length$ -- 9
+substring$ -- 381
+swap$ -- 100
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 58
-width$ -- 23
-write$ -- 228
+warning$ -- 2
+while$ -- 63
+width$ -- 25
+write$ -- 245
+(There were 2 warnings)

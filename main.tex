@@ -17,6 +17,7 @@
 \usepackage{enumitem}
 \usepackage{tocloft}  % 目次のカスタマイズ用パッケージ
 \usepackage{geometry}  % ページレイアウトの調整
+\usepackage{caption} % キャプションのフォーマットを調整するためのパッケージ
 % jlreqsetupで色々設定できるようにする
 \usepackage{jlreq-complements}
 % 画像を扱う
@@ -43,6 +44,7 @@
 \usepackage{bm}
 \usepackage{pdfpages}
 \usepackage{multicol} % 複数列の箇条書き
+\usepackage{placeins} % 図表をセクション内に固定
 
 % 目次の章タイトルを太字にする
 \renewcommand{\cftchapfont}{\bfseries}  % 章タイトルを太字にする
@@ -60,38 +62,65 @@
   },
 }
 
-\geometry{top=40mm, bottom=30mm, left=25mm, right=25mm}
-
+% \geometry{top=40mm, bottom=30mm, left=25mm, right=25mm}
+\geometry{top=80mm, bottom=30mm, left=30mm, right=30mm}
 
 
 \begin{document}
 
+% \begin{titlepage}
+%   \centering
+
+%   {\Large
+%     岐阜大学工学部 \\ [0.5em]
+%     電気電子・情報工学科 \\ [0.5em]
+%     令和6年度卒業論文 \\
+%   } 
+%   \vspace{8em} 
+
+%   {\huge
+%     セキュアなV2Vアドホックネットワーク \\
+%     ルーティングプロトコルのための \\
+%     EdDSA署名方式の評価 \\
+%   }
+%   \vspace{10em}
+
+%   \LARGE 三嶋・角田 研究室 \\ [0.5em]
+%   \Large 学籍番号：1213033107 \\ 
+%   \huge 永野 正剛 \\ [0.5em]
+%   \Large 指導教員 \\
+%   {\LARGE 三嶋 美和子 教授} \\
+%   \LARGE 角田 有 助教 \\
+
+%   \vfill 
+% \end{titlepage}
+
 \begin{titlepage}
   \centering
+  {\large 令和6年度卒業論文}\\
+  \vspace{2em}
+  {\LARGE セキュアなV2Vアドホックネットワーク\\
+  ルーティングプロトコルのための\\[0.5em]
+  EdDSA署名方式の評価}\\
+  \vspace{4em}
+  {\large 岐阜大学　工学部}\\
+  {\large 電気電子・情報工学科}\\
+  \vspace{2em}
+  {\large 三嶋・角田研究室}\\
+  \vspace{2em}
+  {\large 学籍番号：1213033107}\\
+  \vspace{2em}
+  {\Large 永野 正剛}\\
+  \vspace{3em}
+  {\large 指導教員}\\
+  \vspace{1em}
+  {\large 三嶋 美和子 教授}\\
+  \vspace{1em}
+  {\large 角田 有 助教}\\
+  \vfill
 
-  {\Large
-    岐阜大学工学部 \\ [0.5em]
-    電気電子・情報工学科 \\ [0.5em]
-    令和6年度卒業論文 \\
-  } 
-  \vspace{8em} 
-
-  {\huge
-    セキュアなV2Vアドホックネットワーク \\
-    ルーティングプロトコルのための \\
-    EdDSA署名方式の評価 \\
-  }
-  \vspace{10em}
-
-  \LARGE 三嶋・角田 研究室 \\ [0.5em]
-  \Large 学籍番号：1213033107 \\ 
-  \huge 永野 正剛 \\ [0.5em]
-  \Large 指導教員 \\
-  {\LARGE 三嶋 美和子 教授} \\
-  \LARGE 角田 有 助教 \\
-
-  \vfill 
 \end{titlepage}
+
 % 最初のページはページ番号をローマ数字にする
 \pagenumbering{roman}
 
@@ -111,8 +140,6 @@
 \input{chapters/related_works/index.tex}
 \chapter[　　 EdDSA]{EdDSA}
 \input{chapters/eddsa/index.tex}
-\chapter[　　 提案手法]{提案手法}
-\input{chapters/methods/index.tex}
 \chapter[　　 シミュレーション環境]{シミュレーション環境}
 \input{chapters/simulation_environment/index.tex}
 \chapter[　　 実験]{実験}

@@ -1,12 +1,11 @@
 \indent \textbf{ECDSA (Elliptic Digital Signature Algorithm)}は, 
-DSAを楕円曲線暗号（Elliptic Curve Cryptography, ECC）を基盤として
+DSA\cite{fips186-5}を楕円曲線暗号（Elliptic Curve Cryptography, ECC）を基盤として
 改良したデジタル署名アルゴリズムである.
 ECDSAは, 2000年に FIPS 186-2として標準化され, 
 最新版であるFIPS 186-5\cite{fips186-5}でも採用されている.
 ECDSAは, DSAよりも短い鍵長で同等の安全性を確保できるため, 
 計算量が少なく, 低性能なデバイスでも高速な処理が可能であり, 
-かつ演算規則の複雑さから攻撃者が鍵を推測することも困難である. 
-よって, 処理速度と安全性において有限体上のDSAよりも優れている. \\
+かつ演算規則の複雑さから攻撃者が鍵を推測することも困難である. \\
 \indent この項では, ECDSAの理解に必要となる楕円曲線とその上での演算について
 説明し, その後, ECDSAのアルゴリズムについて述べる.\\[1em]
 

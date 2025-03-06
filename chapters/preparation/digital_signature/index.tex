@@ -35,16 +35,15 @@
 デジタル署名にはさまざまなアルゴリズムが存在する. その中でも,    
 \textbf{国立標準技術研究所(National Institute of Standards and Technology, NIST)}
 による情報処理標準規格 FIPS に基づいて設計された
-\textbf{DSA(Digital Signature Algorithm)}およびその改良版である
 \textbf{ECDSA(Elliptic Curve Digital Signature Algorithm)}は, 
 V2V通信のようなリアルタイム性やリソース制約が求められる環境に
 適しているため, 先行研究\cite{shinato}で使用されていた. 
-したがって, 本研究でも, この2つの署名方式を用いて
+したがって, 本研究でも, ECDSA方式を用いて
 シミュレーション実験をし, EdDSAと比較評価を行う. \\
-以下に, DSAとECDSAの概要を示す. \\[1em] 
+以下に, ECDSAの概要を示す. \\[1em] 
 
 
-\noindent {\Large\textbf{DSA}}\\
-\input{chapters/preparation/digital_signature/dsa.tex}
+% \noindent {\Large\textbf{DSA}}\\
+% \input{chapters/preparation/digital_signature/dsa.tex}
 \noindent {\Large\textbf{ECDSA}}\\
 \input{chapters/preparation/digital_signature/ecdsa.tex}

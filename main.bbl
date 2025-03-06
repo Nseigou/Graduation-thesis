@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{ravi}
+Kalkundri Ravi and SA~Kulkarni.
+\newblock A secure message authentication scheme for vanet using ecdsa.
+\newblock In {\em 2013 fourth international conference on computing,
+  communications and networking technologies (ICCCNT)}, pages 1--6. IEEE, 2013.
+
 \bibitem{shinato}
 階戸 弾.
 \newblock
@@ -50,7 +56,8 @@ Brad Karp and Hsiang-Tsung Kung.
 安田 雅哉.
 \newblock ディジタル署名 eddsa
   で使われている曲線の安全性に関する調査及び評価.
-\newblock {\em CRYPTREC 外部評価報告書}, pages 1--47, 2020.
+  cryptrec 外部評価報告書.
+\newblock pages 1--47, 2020.
 
 \bibitem{ns-3}
 George~F Riley and Thomas~R Henderson.
@@ -105,7 +112,8 @@ Lawrence~C Washington.
 \bibitem{インフォーズ}
 株式会社インフォーズ.
 \newblock ディジタル署名アルゴリズム eddsa の実装性能調査.
-\newblock {\em CRYPTREC 外部評価報告書}, pages 1--108, 2021.
+  cryptrec 外部評価報告書.
+\newblock pages 1--108, 2021.
 
 \bibitem{openssl-eddsa}
 {OpenSSL Project}.
@@ -116,5 +124,9 @@ K.~G. Lim et~al.
 \newblock Sumo enhancement for vehicular ad hoc network (vanet) simulation.
 \newblock In {\em 2017 IEEE 2nd International Conference on Automatic and
   Intelligent Systems (I2CACIS)}, pages 86--91. IEEE, 2017.
+
+\bibitem{openstreetmap}
+{OpenStreetMap}.
+\newblock Accessed: 2024-12-27.
 
 \end{thebibliography}
