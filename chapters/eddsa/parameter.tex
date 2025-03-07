@@ -7,21 +7,21 @@ EdDSAのパラメータを表\ref{tab:eddsa-parameters}にまとめる.\\
   \begin{tabular}{cp{10cm}}
     \hline
     \multicolumn{1}{c}{パラメータ} & \multicolumn{1}{c}{説明} \\ \hline \hline
-    $p$ & 法となる素数. EdDSAは$\mathbb{F}_p$上の楕円曲線を使用する.\\
+    $p$ & 法となる素数. EdDSAは$\mathbb{F}_p$上のエドワーズ曲線を使用する.\\
     $b$ & $b\geq 10$かつ$p<2^{b-1}$となる正整数. 公開鍵の長さを表す.\\
     H & ハッシュ関数. 2bビット長のハッシュ値を出力する. \\
     $E$ & EdDSAで使用するエドワーズ曲線. $E$は$\mathbb{F}_p$上の楕円曲線であり, $E$は以下の式で定義される.\\
-    $a$ & $E$を決定するパラメータ. $\mathbb{F}_p$上の平方剰余. すなわち, $x^2\equiv d \pmod{p}$となる$x$が存在する.\\
+    $a$ & $E$を決定するパラメータ. $\mathbb{F}_p$上の平方剰余. すなわち, $x^2\equiv a \pmod{p}$となる$x$が存在する.\\
     $d$ & $E$を決定するパラメータ. $a\neq d$. 非ゼロの非剰余. すなわち, $x^2\equiv d \mod{p}$となる$x$が存在しない.\\
-    $c$ & $E$を決定するパラメータ. $2$または$3$. $2^{c}$はコファクタと呼ばれる.\\
-    $L$ & $E$を決定するパラメータ. $2^{200}$より大きい奇素数で$E$の位数$＃E=2^{c}l$となるような数であり, $B$の位数.\\
+    $c$ & $E$を決定するパラメータ. $c=2$ or $3$. $2^{c}$はコファクタと呼ばれる.\\
+    $L$ & $E$を決定するパラメータ. $B$の位数. $2^{200}$より大きい奇素数. $E$の有理点の個数が$\sharp E=2^{c}l$となるような数である.\\
     $B$ & $E$上のベースポイント. $B\neq (0,1)$\\
     $n$ & $c\leq n < b$となる整数.\\ \hline
   \end{tabular}
 \end{table}
 
 本研究で使用するEd25519のパラメータを表\ref{tab:ed25519-parameters}にまとめる.\\
-\begin{longtable}{cc}
+\begin{longtable}{cl}
   \caption{Ed25519のパラメータ}
   \label{tab:ed25519-parameters}
   \endfirsthead

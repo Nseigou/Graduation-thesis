@@ -1,5 +1,10 @@
 この章では, 本研究で使用したシミュレーション環境について
-述べる. シミュレーションのパラメータは表\ref{tab:simulation_parameter}の通りである.
+述べる. シミュレーション環境と使用されるパラメータを与えた後, 
+4.1節で, 通信規格IEEE 802.11pについて説明する. 4.2節では, 
+VANET環境を再現するために使用した電波伝搬モデルについて述べる. 
+4.3節では, 車の動きを再現するノードを作成するために使用した
+移動モデルについて説明する.\\
+\indent シミュレーションのパラメータは表\ref{tab:simulation_parameter}の通りである. 
 \setlength{\tabcolsep}{30pt}
 \begin{longtable}{ll}
   \caption{シミュレーション環境とパラメータ}
@@ -26,13 +31,10 @@
 \vspace{3em}
 
 \input{chapters/simulation_environment/ns-3.tex}
-\vspace{2em}
+\section{通信規格 IEEE 802.11p}
 \input{chapters/simulation_environment/communication-standards.tex}
-\vspace{2em}
+\section{電波伝搬モデル}
 \input{chapters/simulation_environment/attenuation-model.tex}
-\vspace{1em}
 \input{chapters/simulation_environment/delay-model.tex}
-\vspace{1em}
+\section{移動モデル}
 \input{chapters/simulation_environment/sumo.tex}
-\vspace{2em}
-\input{chapters/simulation_environment/sig_parameter.tex}

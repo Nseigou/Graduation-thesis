@@ -6,18 +6,17 @@
 \begin{equation}\label{edwards}
   x^2 + y^2 = c^2(1+dx^2y^2)
 \end{equation}
-この曲線は, 変数変換することでWeierstrass方程式(式(\ref{weierstrass}))で定まる楕円曲線と
-同型であることが知られている\cite{edwarscurve-to-ellipticcurve}.\\
+この曲線は, 変数変換することによりWeierstrass方程式(\ref{weierstrass})で定まる楕円曲線と
+同型となることが知られている\cite{edwarscurve-to-ellipticcurve}.\\
 \indent ツイストエドワーズ曲線は体$\mathbb{F}_p$ ($p$は素数かつ$p\neq 2$)上で定義され, 
 異なる非零元$a,d\in \mathbb{F}_p$ に対し, 以下の式で与えられる.
 \begin{equation}\label{twist-edwards}
   ax^2 + y^2 = 1 + dx^2y^2
 \end{equation}
-ツイストエドワーズ曲線は, 通常のエドワーズ曲線(式(\ref{edwards}))と
-拡大体上で同型である. この同型により, % $\mathbb{F}_p (\sqrt{a})$
-ツイストエドワーズ曲線上の点集合は群をなす\cite{twisted}.\\[1em]
-\noindent{\large\textbf{ツイストエドワーズ曲線上の楕円加算}}\\
-\indent ツイストエドワーズ曲線上の点$(x_1,y_1)$と$(x_2,x_2)$の加算を以下のように定義する.
+ツイストエドワーズ曲線は, 拡大体上で通常のエドワーズ曲線(\ref{edwards})と
+同型である. したがって, % $\mathbb{F}_p (\sqrt{a})$
+ツイストエドワーズ曲線上の点集合も群をなす\cite{twisted}.\\
+\indent ツイストエドワーズ曲線上の点$(x_1,y_1)$と$(x_2,x_2)$の加算は以下のように定義される.
 \[
   (x_1,y_1)+(x_2,y_2)=
   \left( 
@@ -25,23 +24,24 @@
     \frac{y_1y_2+ax_1x_2}{1-dx_1x_2y_1y_2} 
   \right)
 \] \\[1em]
-\noindent{\large\textbf{無限遠点}}\\
+
 \indent ツイストエドワーズ曲線で無限遠点$\mathcal{O}$は以下の性質をもつ.\\[0.5em]
 \noindent\textbf{(1)加法における単位元}\\
-\indent 無限遠点は楕円曲線$E$上の特別な点で任意の点$P$に対して, 次の式が成り立つ.
+\indent 無限遠点は楕円曲線$E$上の特別な点であり, 任意の点$P$に対して, 次式を満たす.
 \[
   P+\mathcal{O}=\mathcal{O}+P=P
 \]
-\indent ツイストエドワーズ曲線を使用したEd25519において, 無限遠点$\mathcal{O}$は
+\indent ツイストエドワーズ曲線を使用したEd25519では, 無限遠点$\mathcal{O}$は
 次の座標をもつと定義される.
 \[
   \mathcal{O}=(0,1)
 \]
-\indent 曲線の方程式(式(\ref{twist-edwards}))に$(x,y)=(0,1)$を代入すると,
+\indent 無限遠点$\mathcal{O}$がツイストエドワーズ曲線上の点であることは
+明らかである. なぜならば, 曲線の方程式(\ref{twist-edwards})に$(x,y)=(0,1)$を代入すると,
 \[
   a\cdot 0^2 + 1^2 = 1 + d\cdot 0^{2}\cdot 1^2
 \]
-となり, 明らかに成り立つ.\\[1em]
+が成り立つからである.\\[0.5em]
 \noindent \textbf{(2)点の加法逆元}\\
 \indent 点$P=(x,y)$に対して, その逆元$-P$は次のように定義される.
 \[
@@ -51,16 +51,18 @@
 \[
   -\mathcal{O}=\mathcal{O}=(0,1)
 \]
-となる.\\
+となる.\\[0.5em]
 \noindent \textbf{(3)スカラー倍}\\
-\indent スカラー倍($kP$)で$k=0$の場合, 常に無限遠点となる.
+\indent ツイストエドワーズ曲線上の・$P$のスカラー倍$kP$では, 
+$k=0$の場合, 常に無限遠点となる.
 \[
   0\cdot P=\mathcal{O}=(0,1)
 \]
 
-\indent ツイストエドワーズ曲線$E$は$\mathcal{O}$を単位元とする加法群になる.\\
-楕円点の加算, 2倍算（同一の点の加算）, 無限遠点の加算が同一式で
-表現されるため, ECDSAのような分岐処理が不要になり, 計算が簡略化される.\\
+\indent ツイストエドワーズ曲線$E$の有理点全体の集合は$\mathcal{O}$を
+単位元とする加法群をなす.\\
+\indent 楕円点の加算, 2倍算（同一の点の加算）, 無限遠点の加算が同一式で
+表現されるため, ECDSAのような分岐処理が不要になり, 計算が簡略化できる.\\
 
 
 

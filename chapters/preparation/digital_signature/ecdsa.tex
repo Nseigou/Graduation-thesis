@@ -2,38 +2,35 @@
 DSA\cite{fips186-5}を楕円曲線暗号（Elliptic Curve Cryptography, ECC）を基盤として
 改良したデジタル署名アルゴリズムである.
 ECDSAは, 2000年に FIPS 186-2として標準化され, 
-最新版であるFIPS 186-5\cite{fips186-5}でも採用されている.
+4度の改定を経て, 現在FIPS 186-5\cite{fips186-5}が最新の標準規格となっている. 
 ECDSAは, DSAよりも短い鍵長で同等の安全性を確保できるため, 
 計算量が少なく, 低性能なデバイスでも高速な処理が可能であり, 
 かつ演算規則の複雑さから攻撃者が鍵を推測することも困難である. \\
-\indent この項では, ECDSAの理解に必要となる楕円曲線とその上での演算について
-説明し, その後, ECDSAのアルゴリズムについて述べる.\\[1em]
-
-\noindent{\large\textbf{楕円曲線}}\\
-\indent 体$\mathbb{F}_p$($p$は素数)上で定義された楕円曲線とは以下の式で与えられる
+\indent ここから, ECDSAの理解に必要となる楕円曲線と楕円曲線上での演算について
+説明た後, ECDSAのアルゴリズムについて述べる.\\
+\indent 体$\mathbb{F}_p$ ($p$は素数)上で定義された楕円曲線とは以下の式で与えられる
 代数曲線である.
 \[
   y^2+a_1y+a_3y=x^3+a_2x^2+a_4x+a_6　　(a_1,a_2,a_3,a_4,a_6\in\mathbb{F}_p)
 \]
-この式をWeierstrass方程式という\cite{安田}. 
+この式を\textbf{Weierstrass方程式}という\cite{安田}. 
 特に, $p\neq 2,3$の場合, 以下の標準形に簡略化できることが知られている. 
 \begin{equation}\label{weierstrass}
   y^2=x^3+ax+b　　(a,b\in\mathbb{F}_p)
 \end{equation}
-\indent 楕円曲線(式(\ref{weierstrass}))の判別式$\Delta$が
+\indent 楕円曲線(\ref{weierstrass})の判別式$\Delta$が
 \[
   \Delta=-16(4a^3+27b^2)\neq 0
 \]
-を満たすとき, 楕円曲線(式\ref{weierstrass})は\textbf{非特異}であるという. 
-非特異である楕円曲線は, 尖点や自己交差点, 孤立点を持たないため, 
+を満たすとき, 楕円曲線(\ref{weierstrass})は\textbf{非特異}であるという. 
+非特異である楕円曲線は, 尖点や自己交差点, 孤立点をもたないため, 
 楕円曲線が非特異であることは, 後述する楕円曲線上の点に対する演算
 (加算やスカラー倍)が矛盾なく定義されるために必要不可欠である.\\
-\indent 楕円曲線上の点$P=(x,y)$のうち$x,y$がともに有限体
+\indent 楕円曲線上の点$P=(x,y)$のうち, $x,y$がともに有限体
 $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕円曲線上には
 \textbf{無限遠点}と呼ばれる特殊な点$\mathcal{O}$の存在を仮定し, これも楕円曲線上の
 有理点の集合に含める. 有理点の集合は, 以下で述べる演算に関して
-群の構造をもつ. 楕円曲線暗号方式では，この性質が利用される.\\[1em]
-\noindent\textbf{楕円曲線上の点の加算}\\
+群の構造をもつ. 楕円曲線暗号方式では，この性質が利用される.\\
 \indent 楕円曲線上の点$P=(x_1,y_1)$と$Q=(x_2,y_2)$の加算 $P+Q$ を
 以下のように定義する.
 \begin{enumerate}
@@ -91,19 +88,15 @@ $\mathbb{F}_p$の元であるものを\textbf{有理点}という. また, 楕�
   \]    
 \end{enumerate}
 \vspace{0.5em}
-\noindent\textbf{スカラー倍算}\\
-\indent 正整数$k$による点$G$のスカラー倍$P=kG$は, 点$G$を$k$回加算した結果を表す.
+\indent 正整数$k$による点$G$のスカラー倍$P=kG$は, 点$G$を$k$個加算した結果を表す.
 \[
-  P=kG=\underbrace{G+G+\cdots+G}_{k\text{回}}
+  P=kG=\underbrace{G+G+\cdots+G}_{k\text{個}}
 \]
 \indent ある基準点$G$に対し, $P = kG$となる楕円曲線上の点$P$が与えられたとき, 
 $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$から$k$を
 求めるのは計算量的に困難であることが知られている. 
-これを\textbf{楕円曲線上の離散対数問題(Elliptic Curve Discrete Logarithm Problem, ECDLP)}という.\\[1em]
-
-\noindent{\large\textbf{ECDSAのアルゴリズム}}\\
-\indent ECDSAの3つのフェーズにおける処理は以下の通りである.
-\vspace{1em}
+これを\textbf{楕円曲線上の離散対数問題(Elliptic Curve Discrete Logarithm Problem, ECDLP)}という.\\
+\indent 以下に, ECDSAにアルゴリズムを構成する3つのフェーズのそれぞれにおける処理を与える. \\
 \let\ltxlist\list
 \begin{breakitembox}[l]{\textbf{鍵生成}}
   　
@@ -155,4 +148,4 @@ $k$と$G$から$P$を求めるのは容易である. しかし, 逆に$G$と$P$�
       &= kG
 \end{align*}
 が成り立つため, $Q'$の$x$座標が$r$と一致するかどうかを確認することで
-署名検証が可能である.\\
+署名検証が可能となっている.\\

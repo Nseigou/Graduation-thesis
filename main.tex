@@ -62,8 +62,7 @@
   },
 }
 
-% \geometry{top=40mm, bottom=30mm, left=25mm, right=25mm}
-\geometry{top=80mm, bottom=30mm, left=30mm, right=30mm}
+\geometry{top=40mm, bottom=30mm, left=25mm, right=25mm}
 
 
 \begin{document}
@@ -96,7 +95,9 @@
 % \end{titlepage}
 
 \begin{titlepage}
+  \newgeometry{top=80mm, bottom=30mm, left=30mm, right=30mm} % 一時的にレイアウト変更
   \centering
+  \textbf{
   {\large 令和6年度卒業論文}\\
   \vspace{2em}
   {\LARGE セキュアなV2Vアドホックネットワーク\\
@@ -116,8 +117,9 @@
   \vspace{1em}
   {\large 三嶋 美和子 教授}\\
   \vspace{1em}
-  {\large 角田 有 助教}\\
+  {\large 角田 有 助教}\\}
   \vfill
+  \restoregeometry % もとのレイアウトに戻す
 
 \end{titlepage}
 
@@ -136,7 +138,7 @@
 \input{chapters/introduction/index.tex}
 \chapter[　　 準備]{準備}
 \input{chapters/preparation/index.tex}
-\chapter[　　 関連研究]{関連研究}
+\chapter[　　 先行研究]{先行研究}
 \input{chapters/related_works/index.tex}
 \chapter[　　 EdDSA]{EdDSA}
 \input{chapters/eddsa/index.tex}
@@ -144,8 +146,6 @@
 \input{chapters/simulation_environment/index.tex}
 \chapter[　　 実験]{実験}
 \input{chapters/experiment/index.tex}
-\chapter[　　 EdDSAに関する実装評価まとめ]{EdDSAに関する実装評価まとめ}
-\input{chapters/evaluation/index.tex}
 \chapter*{おわりに}
 \addcontentsline{toc}{chapter}{おわりに}  % 目次に追加
 \input{chapters/conclusion/index.tex}

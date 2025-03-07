@@ -3,7 +3,6 @@
 その後, 不正ノードの存在しない環境でノード数を37, 74, 112, 148, 185に設定して
 250回ずつシミュレーションを行い, それぞれの実行にかかった時間と使用したメモリ量を調べた. 
 実験2の主なシミレーションパラメータは表\ref{tab:exp3-params}に示す通りである. 
-\indent 実験の結果は以下の通りである. 
 \begin{longtable}{cc}
   \caption{実験3のシミュレーションパラメータ}
   \label{tab:exp3-params}
@@ -14,6 +13,9 @@
   送受信ノードのペア数 & 1 \\ 
   不正ノード & なし \\ \hline
 \end{longtable}
+\vspace{1em}
+\indent 実験結果を表\ref{tab:exp3_sigtime}, 図\ref{fig:exp3_simtime}, 
+表\ref{tab:exp3_simtime}, 図\ref{fig:memory_usages}, 表\ref{tab:exp3_memory}に示す. \\
 
 \begin{longtable}{c|cc}
   \caption{1回の署名作成, 署名検証にかかった時間}
@@ -24,15 +26,13 @@
   ECDSA & $0.371$ & $0.336$ \\
   EdDSA & $0.031$ & $0.097$ \\ \hline
 \end{longtable}
-
-
+\clearpage
 \begin{figure}
   \centering
   \includegraphics[width=1\textwidth]{figures/exp3_simtime.png}
   \caption{ノード数によるシミュレーション実行時間の変化}
   \label{fig:exp3_simtime}
 \end{figure}
-\clearpage
 \setlength{\tabcolsep}{4pt}
 \begin{longtable}{
     >{\raggedright\arraybackslash}p{3cm}
@@ -79,14 +79,13 @@
   % $185$ & $345.059$ & $1908.7$ & $1324.55$ & $635.155$ \\ \hline
 \end{longtable}
 
+\clearpage
 \begin{figure}
   \centering
   \includegraphics[width=1\textwidth]{figures/exp3_memory.png}
   \caption{ノード数によるメモリ使用量の変化}
   \label{fig:memory_usages}
 \end{figure}
-
-\clearpage
 \setlength{\tabcolsep}{4pt}
 \begin{longtable}{c|cccc}
   \caption{メモリ使用量}
@@ -100,11 +99,8 @@
   $148$ & 80,749 & 409,965 & 219,102 \\
   $185$ & 84,548 & 560,753 & 285,191 \\ \hline
 \end{longtable}
-
-
-
-
-\indent 表\ref{tab:exp3_sigtime}は, ECDSAとEdDSAにおいて, 
+\vspace{2em}
+\indent 表~\ref{tab:exp3_sigtime}は, ECDSAとEdDSAにおいて, 
 1回の署名作成と署名検証に要する時間を示したものである.
 図\ref{fig:exp3_simtime}はシミュレーションパターンごとのノード数による
 実行時間の変化を近似してグラフにしたものを, 表\ref{tab:exp3_simtime}はその具体的な
@@ -114,10 +110,11 @@
 短いことから, EdDSAはECDSAよりも高速に処理されることがわかった. 
 図\ref{fig:exp3_simtime}, 表\ref{tab:exp3_sigtime}, 図\ref{fig:memory_usages}, 
 表\ref{tab:exp3_memory}より, 同じノード数の場合において, EdDSAはECDSAよりも
-シミュレーション実行時間やメモリ使用量が常に短い. さらに, シミュレーション実行時間と
-メモリ使用量を示すグラフに描かれているEdDSAの近似曲線はECDSAの
-近似曲線よりも勾配が緩やかである. これらの結果から, EdDSAはECDSAと比べて, 
-ネットワーク全体の計算コストの増加を抑えつつ, より少ないリソースで効率的に動作することが可能であるため, 
-特に大規模なネットワーク環境において優れたスケーラビリティを有すると考えられる. \\
+シミュレーション実行時間やメモリ使用量が常に少ないことがわかった. 
+さらに, シミュレーション実行時間とメモリ使用量を示すグラフに描かれているEdDSAの
+近似曲線はECDSAの近似曲線よりも勾配が緩やかとなった. これらの結果から, EdDSAは
+ECDSAと比べて, ネットワーク全体の計算コストの増加を抑えつつ, より少ないリソースで
+効率的に動作することが可能であり, 特に大規模なネットワーク環境において
+優れたスケーラビリティを有すると考えられる. \\
 
 

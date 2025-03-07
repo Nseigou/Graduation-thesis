@@ -9,21 +9,39 @@ ns-3のシステムは大きく分けて, シミュレーションの
 モジュール化されており, 複数のモジュールを組み合わることでシミュレーションを実現する. 
 そのため, ユーザーは, 必要なモジュールを選択し, モジュール内で不足している部分を
 適宜実装していくことで, 要件に応じたシミュレーションを実行することができる. 
-開発言語はC++とPythonをサポートしている. \\
-\indent ns-3では様々なコンテナと呼ばれるノードやネットワーク要素を効率的に
+開発言語としてC++とPythonがサポートされている. \\
+\indent ns-3では\textbf{コンテナ}と呼ばれる様々なノードやネットワーク要素を効率的に
 管理するためのデータ構造が存在し, それらを組み合わせて
-プログラムを作成していく. 一般的には次の4つの主要なコンテナが使用される.
-\begin{itemize}
-  \item NodeContainer\\ 
-  \indent ノードを管理するためのコンテナであり, 
-  コンピュータやルータなど, 扱うデバイスが何であるかを示す. 
-  \item DeviceContainer\\
-  \indent 通信デバイスを管理するためのコンテナであり, 
-  ノードがどのような通信機能をもつかを指定する. 
-  \item InterfaceContainer\\
-  \indent IPインターフェースを管理するためのコンテナであり, IPアドレスや
-  サブネットマスクなどの情報を保持する.
-  \item ApplicationContainer\\
-  \indent アプリケーションレイヤのプログラムやサービスを管理するための
-  コンテナであり, HTTPサーバやUDPアプリケーションなどが用意されている.
-\end{itemize}
+プログラムを作成していく. 一般的には, 表\ref{tab:container}に示す4つの主要なコンテナが使用される.
+% \begin{itemize}
+%   \item NodeContainer\\ 
+%   \indent ノードを管理するためのコンテナであり, 
+%   コンピュータやルータなど, 扱うデバイスが何であるかを示す. 
+%   \item DeviceContainer\\
+%   \indent 通信デバイスを管理するためのコンテナであり, 
+%   ノードがどのような通信機能をもつかを指定する. 
+%   \item InterfaceContainer\\
+%   \indent IPインターフェースを管理するためのコンテナであり, IPアドレスや
+%   サブネットマスクなどの情報を保持する.
+%   \item ApplicationContainer\\
+%   \indent アプリケーションレイヤのプログラムやサービスを管理するための
+%   コンテナであり, HTTPサーバやUDPアプリケーションなどが用意されている.
+% \end{itemize}
+\begin{longtable}{cl}
+  \caption{ns-3で使用される主要なコンテナ}
+  \label{tab:container} \\
+  \endfirsthead
+  \hline
+  \multicolumn{1}{c}{コンテナ名} & \multicolumn{1}{c}{説明} \\ \hline \hline
+  NodeContainer & ノードを管理するためのコンテナであり, 
+  コンピュータやルータなど,\\ 
+  &扱うデバイスが何であるかを示す. \\
+  InterfaceContainer & 通信デバイスを管理するためのコンテナであり, 
+  ノードがどのような\\ 
+  &通信機能をもつかを指定する.  \\
+  DeviceContainer & IPインターフェースを管理するためのコンテナであり, IPアドレスや\\ 
+  &サブネットマスクなどの情報を保持する. \\
+  ApplicationContainer & アプリケーションレイヤのプログラムやサービスを管理するための\\
+  &コンテナであり, HTTPサーバやUDPアプリケーションなどが\\
+  &用意されている. \\ \hline
+\end{longtable}

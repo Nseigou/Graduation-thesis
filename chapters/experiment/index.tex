@@ -9,81 +9,67 @@
 EdDSAのセキュリティ性能, ネットワークへの負荷, 計算効率を評価するために, 
 次の8項目を評価基準とした. なお, どの項目も集計したデータの平均値を用いる.  
 \vspace{-3mm}
-\setlength{\columnsep}{10pt} % デフォルトは約35pt
-\begin{multicols}{2}
-  \begin{enumerate}
-      \item スループット(TP)
-      \item 遅延時間 (DT) 
-      \item パケット配送率 (PDR)
-      \item オーバーヘッドサイズ (OH)\\
-      \item シミュレーション実行時間
-      \item 署名作成時間
-      \item 署名検証時間
-      \item メモリ使用量
-  \end{enumerate}
-\end{multicols}
+
+\begin{enumerate}
+    \item スループット(TP)
+    \item 遅延時間 (DT) 
+    \item パケット配送率 (PDR)
+    \item オーバーヘッドサイズ (OH)
+    \item シミュレーション実行時間
+    \item 署名作成時間
+    \item 署名検証時間
+    \item メモリ使用量
+\end{enumerate}
 \begin{enumerate}
   \item \textbf{スループット(TP)}\\
   \indent \textbf{スループット}とは, 単位時間あたりに正常に転送された
-  データ量のことである. 以下に示す式で定義される. ここで, 
-  $AllTxBytes$は合計転送バイト数, $TxTimes$は
-  転送にかかった時間である. \\
+  データ量のことである. 以下に示す式で定義される. 
   \[
-    TP = \frac{AllTxBytes\times 8}{TxTimes\times 1000}\text{[kbps]}
+    TP = \frac{AllTxBytes\times 8}{TxTimes\times 1000} \quad \text{[kbps]}
   \]
+  ここで, $AllTxBytes$は合計転送バイト数, $TxTimes$は
+  転送にかかった時間である. 
   \item \textbf{遅延時間(DT)}\\
   \indent \textbf{遅延時間}とは, パケットが送信されてから受信されるまでの
-  時間のことである. 以下に示す式で定義される. ここで,
-  $TxPacketTime$は送信ノードがパケットを送信した時間, 
-  $RxPacketTime$は宛先ノードがパケットを受信した時間である. \\
+  時間のことである. 以下に示す式で定義される. 
   \[
-    DT = RxPacketTime - TxPacketTime \text{[ms]}
+    DT = RxPacketTime - TxPacketTime \quad \text{[ms]}
   \]
-
+  ここで,
+  $TxPacketTime$は送信ノードがパケットを送信した時間, 
+  $RxPacketTime$は宛先ノードがパケットを受信した時間である. 
   \item \textbf{パケット配送率(PDR)}\\
   \indent \textbf{パケット配送率}とは, 送信されたデータ量のうち
   損失せずに受信されたデータ量の割合のことである. 以下に示す式で定義される. 
-  ここで, $AllTxPackets$は合計送信パケット数, $AllRxPackets$は
-  合計受信バイト数である. \\
   \[
-    PDR = \frac{AllRxPackets}{AllTxPackets} \times 100 \text{[\%]}
+    PDR = \frac{AllRxPackets}{AllTxPackets} \times 100 \quad \text{[\%]}
   \]
-
+  ここで, $AllTxPackets$は合計送信パケット数, $AllRxPackets$は
+  合計受信バイト数である. 
   \item \textbf{オーバーヘッドサイズ(OH)}\\
   \indent \textbf{オーバーヘッドサイズ}とは, データの送受信に付随して発生する
   余分なコストのことであり, ここではルーティングに使用される
-  通信データ量を指す. 以下に示す式で定義される. ここで, 
-  $AllTxKBytes$はHelloパケットを含めた全ノードの合計送信キロバイト数, 
-  $TxKBytes$はデータパケットの合計送信キロバイト数である. \\
+  通信データ量を指す. 以下に示す式で定義される. 
   \[
-    OH = AllTxKBytes - TxKBytes \text{[KB]}
+    OH = AllTxKBytes - TxKBytes \quad \text{[KB]}
   \]
-
+  ここで, 
+  $AllTxKBytes$はHelloパケットを含めた全ノードの合計送信キロバイト数, 
+  $TxKBytes$はデータパケットの合計送信キロバイト数である. 
   \item \textbf{シミュレーション実行時間}\\
-  \indent \textbf{シミュレーション実行時間}とは, 現実時間で5分間分のSUMOデータを使って
+  \indent \textbf{シミュレーション実行時間}とは, 現実時間で5分間分のSUMOデータを使い, 
   1回のシミュレーションを行ったときの実行時間のことである. 
-
   \item \textbf{署名作成時間}\\
   \indent \textbf{署名作成時間}とは, データに署名を付与する際にかかった実時間のことである. 
-
   \item \textbf{署名検証時間}\\
   \indent \textbf{署名検証時間}とは, データの署名を検証する際にかかった実時間のことである.
-
   \item \textbf{メモリ使用量}\\
   \indent \textbf{メモリ使用量}とは, シミュレーション実行時に使用されたメモリの総量のことである.
 \end{enumerate}
-\vspace{2em}
-
-\indent 3種類の実験の概要を述べる.\\
-\indent 実験1では, 認証機構 (EdDSA)の有効性を調査する. 具体的には, 不正ノードが存在する環境で, 
-パケット配送率(PDR)とスループットを測定し, EdDSAによってセキュリティがどの程度確保されているかを評価する. \\
-\indent 実験2では, 実験1の結果をもとに, 認証機構 (EdDSA)が正しく機能していることを
-確認したうえで, 認証機構 (EdDSA)の追加によるネットワークへの負荷を調査する. 
-具体的には, 不正ノードの存在しない環境で, 遅延時間と, オーバーヘッドサイズを測定し, EdDSAが
-他の認証方式と比べてどのような特徴を持つのかを評価する. \\
-\indent 実験3では, 署名方式の違いによる認証機構の効率を調査する. 
-具体的には, 不正ノードの存在しない環境で, 署名に関する処理時間とノード数を37, 74, 112, 148, 185に
-変化させたときのシミュレーション実行時間, メモリ使用量を計測し, EdDSAの処理効率について評価する. \\
+\vspace{0.5em}
+\indent 　この章では, 本研究で行った3種類の実験について, それぞれの節に分けて, その概要, 
+シミュレーション結果およびその結果に対する考察を与える. \\
+\indent 最後に5.4節で, 本研究で行ったEdDSAの実装について評価する. 
 
 \section{実験1}
 \input{chapters/experiment/exp1.tex}
@@ -91,3 +77,5 @@ EdDSAのセキュリティ性能, ネットワークへの負荷, 計算効率�
 \input{chapters/experiment/exp2.tex}
 \section{実験3}
 \input{chapters/experiment/exp3.tex}
+\section{EdDSAの実装評価まとめ}
+\input{chapters/experiment/evaluation.tex}
